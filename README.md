@@ -10,7 +10,7 @@ Academic homepage: **https://zhanxch.github.io/**.
 - 按本人要求，DEWO 与 ROT 均不附论文、代码或项目链接。
 - 牙菌斑工作来自 [HKU Scholars Hub](https://hub.hku.hk/handle/10722/359253)，按资料库的 Conference_Paper 类型及 Journal of Clinical Periodontology 52(S28) 信息展示。放在 Earlier work，保留完整研究经历。
 - 页面仅包含已确认适合展示的研究内容。
-- 依本人要求不放头像；学位/职务、CV 未提供，因此没有添加占位内容。
+- 头像使用本人姓名的原创手写签名图；学位/职务、CV 未提供，因此没有添加占位内容。
 
 ## 部署到 GitHub Pages
 
@@ -25,6 +25,10 @@ Academic homepage: **https://zhanxch.github.io/**.
 
 ## 后续修改
 
-直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观。无构建步骤，无第三方脚本，无外部字体依赖。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
+直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
+
+视觉采用签名头像、固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
+
+字体使用 DM Sans 与 Newsreader，许可证保存在 `assets/fonts/`。
 
 ROT 的 ACL Anthology 页面公开后可补充对应链接。其他工作决定公开且有可公开材料后再加入；若仍在审稿，清楚区分投稿状态与已接收论文。
