@@ -16,6 +16,7 @@
   <link rel="preload" href="assets/fonts/dm-sans-regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
+  <script src="about-motion.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,10 +45,17 @@
     <main id="main">
       <section class="about" id="about" aria-labelledby="about-title">
         <p class="section-label"><span aria-hidden="true">01</span> About</p>
-        <h2 id="about-title" class="intro-title">Learning from the world<span class="title-period">.</span></h2>
-        <p class="intro-copy">I’m a <strong>Ph.D. student in Computer Science</strong> at Harbin Institute of Technology, Shenzhen. My path into AI began with mathematics at Sun Yat-sen University, followed by a master’s in artificial intelligence at the University of Hong Kong.</p>
-        <p class="intro-copy">I work on <strong>embodied intelligence</strong> and <strong>multimodal large language models</strong>. I’m drawn to models that build their understanding through interaction: predicting what comes next, staying grounded in what they observe, and improving through experience.</p>
-        <div class="interest-line"><span>World models</span><span>Learning from interaction</span><span>VLM hallucinations</span></div>
+        <div class="world-field">
+          <canvas class="world-canvas" aria-hidden="true"></canvas>
+          <p class="world-eyebrow">Observe <span>·</span> Interact <span>·</span> Learn</p>
+          <h2 id="about-title" class="world-title"><span>Learning</span> <span>from the world.</span></h2>
+          <div class="world-footer">
+            <button class="world-ripple" type="button" hidden aria-label="Send a ripple through the particles"><span class="ripple-mark" aria-hidden="true">◎</span><span class="world-hint">Move to explore · click to ripple</span></button>
+            <button class="world-pause" type="button" hidden aria-label="Pause animation" aria-pressed="false"><span class="pause-mark" aria-hidden="true"></span><span class="pause-label">Pause</span></button>
+          </div>
+        </div>
+        <p class="intro-copy">I’m a <strong>Ph.D. student in Computer Science</strong> at Harbin Institute of Technology, Shenzhen, working on <strong>embodied intelligence</strong> and <strong>multimodal large language models</strong>.</p>
+        <p class="intro-copy">I’m interested in how models understand the world—and how that understanding evolves through interaction.</p>
       </section>
 
       <section class="experience" id="experience" aria-labelledby="experience-title">
