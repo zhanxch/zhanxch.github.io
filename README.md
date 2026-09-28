@@ -10,7 +10,8 @@ Academic homepage: **https://zhanxch.github.io/**.
 - 按本人要求，DEWO 与 ROT 均不附论文、代码或项目链接。
 - 牙菌斑工作来自 [HKU Scholars Hub](https://hub.hku.hk/handle/10722/359253)，按资料库的 Conference_Paper 类型及 Journal of Clinical Periodontology 52(S28) 信息展示。放在 Earlier work，保留完整研究经历。
 - 页面仅包含已确认适合展示的研究内容。
-- 头像使用本人姓名的原创手写签名图；学位/职务、CV 未提供，因此没有添加占位内容。
+- 头像使用本人姓名的原创手写签名图。
+- 教育经历由本人提供：中山大学数学与应用数学本科、香港大学人工智能硕士、哈尔滨工业大学（深圳）计算机博士阶段。起止年份未提供，暂不展示年份。
 
 ## 部署到 GitHub Pages
 
