@@ -1,6 +1,6 @@
 # Xiangcheng Zhan · Personal homepage
 
-Static academic homepage, prepared for **https://zhanxch.github.io/**.
+Academic homepage: **https://zhanxch.github.io/**.
 
 ## 内容说明
 
@@ -19,7 +19,7 @@ Static academic homepage, prepared for **https://zhanxch.github.io/**.
 3. 在仓库 **Settings → Pages → Build and deployment** 中选择 **Deploy from a branch**，分支选择 `main`，目录选择 `/ (root)`，保存。
 4. 等 GitHub Pages 部署完成后，访问 https://zhanxch.github.io/。
 
-目前这里只是部署说明；仓库创建和线上发布状态应以实际 GitHub 结果为准。
+已部署到 GitHub Pages，发布来源为 `main` 分支根目录。后续推送到 `main` 会自动更新网站。
 
 官方参考：[Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)。
 
