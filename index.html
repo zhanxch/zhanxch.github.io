@@ -45,29 +45,35 @@
     <main id="main">
       <section class="about" id="about" aria-labelledby="about-title">
         <p class="section-label"><span aria-hidden="true">01</span> About</p>
-        <div class="futures">
-          <div class="futures-heading"><h2 id="about-title">The research tree<span>.</span></h2><span class="futures-note">One fruit, one paper</span></div>
-          <div class="futures-stage">
-            <canvas class="futures-canvas" aria-hidden="true"></canvas>
-            <div class="research-fruits" role="group" aria-label="Explore the three papers" hidden>
-              <button type="button" class="research-fruit" data-paper="dewo" aria-label="Open DEWO paper details" aria-expanded="false" aria-controls="fruit-detail"><span class="fruit-icon" aria-hidden="true"><span></span></span><span class="fruit-label">DEWO</span></button>
-              <button type="button" class="research-fruit" data-paper="rot" aria-label="Open ROT paper details" aria-expanded="false" aria-controls="fruit-detail"><span class="fruit-icon" aria-hidden="true"><span></span></span><span class="fruit-label">ROT</span></button>
-              <button type="button" class="research-fruit" data-paper="plaque" aria-label="Open 3D Vision paper details" aria-expanded="false" aria-controls="fruit-detail"><span class="fruit-icon" aria-hidden="true"><span></span></span><span class="fruit-label">3D Vision</span></button>
-            </div>
-            <div class="fruit-tooltip" id="fruit-tooltip" role="tooltip" hidden></div>
-            <p class="futures-fallback">Three papers, rooted in curiosity.<br>Explore the research below.</p>
+        <div class="emergence">
+          <div class="sprout-scene">
+            <svg class="sprout-art" viewBox="0 0 320 185" role="img" aria-label="A small green seedling emerging through the soil">
+              <ellipse cx="158" cy="148" rx="54" ry="3" fill="#a6a08c" opacity=".07"/>
+              <g class="sprout-plant">
+                <path class="sprout-stem" pathLength="1" d="M158 145 C154 129 166 110 163 86" fill="none" stroke="#768463" stroke-width="2.8" stroke-linecap="round"/>
+                <g class="sprout-leaf leaf-left">
+                  <path d="M162 107 C137 112 116 97 111 78 C135 77 159 85 162 107Z" fill="#a3b48a"/>
+                  <path d="M160 105 Q138 92 116 81" fill="none" stroke="#dce3c8" stroke-width=".8" opacity=".85"/>
+                </g>
+                <g class="sprout-leaf leaf-right">
+                  <path d="M163 87 C161 64 181 45 201 45 C199 66 185 84 163 87Z" fill="#7e966e"/>
+                  <path d="M165 84 Q181 68 198 48" fill="none" stroke="#d6dfbd" stroke-width=".8" opacity=".8"/>
+                </g>
+              </g>
+              <g fill="none" stroke="#aa9e89" stroke-linecap="round">
+                <path class="soil-left" d="M67 149 C92 147 113 149 134 147 Q145 143 154 147" stroke-width=".85" opacity=".55"/>
+                <path class="soil-right" d="M163 147 Q173 143 185 147 C207 148 228 147 250 149" stroke-width=".85" opacity=".55"/>
+                <path d="M114 155 Q133 156 143 155 M177 155 Q195 156 210 154" stroke-width=".55" opacity=".2"/>
+              </g>
+              <g class="soil-grains" fill="#a39178" opacity=".4">
+                <ellipse cx="150" cy="150" rx="1.6" ry=".85" transform="rotate(-20 150 150)"/>
+                <ellipse cx="169" cy="149" rx="1.8" ry=".8" transform="rotate(12 169 149)"/>
+                <ellipse cx="177" cy="151" rx=".85" ry=".6"/>
+              </g>
+            </svg>
           </div>
-          <div class="futures-footer">
-            <span class="futures-hint" hidden>Pick a fruit to explore a paper.</span>
-            <button class="futures-pause" type="button" hidden aria-label="Pause animation" aria-pressed="false"><span class="pause-mark" aria-hidden="true"></span><span class="pause-label">Pause</span></button>
-          </div>
-          <div class="fruit-detail" id="fruit-detail" role="region" aria-labelledby="fruit-detail-title" hidden>
-            <div class="fruit-detail-top"><p class="fruit-detail-venue"></p><button class="fruit-detail-close" type="button" aria-label="Close paper details">×</button></div>
-            <h3 id="fruit-detail-title"></h3>
-            <p class="fruit-detail-authors"></p>
-            <p class="fruit-detail-summary"></p>
-            <a class="fruit-detail-link" href="#research">View full entry <span aria-hidden="true">↓</span></a>
-          </div>
+          <h2 id="about-title" class="sprout-caption"><span>Still early.</span> <span>Still growing.</span></h2>
+          <button class="sprout-replay" type="button" hidden aria-label="Replay the seedling growth animation"><span aria-hidden="true">↻</span> Replay</button>
         </div>
         <p class="intro-copy">I’m a <strong>Ph.D. student in Computer Science</strong> at Harbin Institute of Technology, Shenzhen, working on <strong>embodied intelligence</strong> and <strong>multimodal large language models</strong>.</p>
         <p class="intro-copy">I’m interested in how models understand the world—and how that understanding evolves through interaction.</p>

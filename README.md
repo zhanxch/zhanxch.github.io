@@ -28,7 +28,7 @@ Academic homepage: **https://zhanxch.github.io/**.
 
 直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航，`about-motion.js` 负责 About 交互动画。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
 
-About 使用 Research tree（研究树）：灰绿色叶片与三颗暗红果实构成论文导航。DEWO、ROT 和 3D Vision 各对应一篇已有论文。悬停或键盘聚焦果实显示完整标题，点击或轻触展开对应论文的标题、作者、状态与简介，并可跳转到页面中的完整条目。卡片信息从同页论文条目读取，避免重复维护；DEWO 与 ROT 不包含外部链接。初次进入有简短的树干、叶片与果实呈现过程，此后只保留轻微摆动，支持暂停、减少动态效果、键盘操作、离屏停止绘制。
+About 使用破土嫩芽：土面轻轻分开，细茎探出后展开两片灰绿色叶子，配文 Still early. Still growing.（尚在起步，仍在生长）。动画在首次进入可见区域时播放一次，完成后保持静止；鼠标靠近时轻轻倾斜，提供键盘和触摸可用的重播按钮。尊重减少动态效果设置，切到后台或离开可见区域时暂停。原有三篇论文保留在正常列表中。
 
 视觉采用签名头像、固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
 
