@@ -26,9 +26,9 @@ Academic homepage: **https://zhanxch.github.io/**.
 
 ## 后续修改
 
-直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航，`about-motion.js` 负责 About 粒子动画。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
+直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航，`about-motion.js` 负责 About 交互动画。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
 
-About 采用原创 Canvas 粒子排字与轨道动画：鼠标拨动粒子，点击或触摸产生涟漪，键盘可通过按钮触发相同效果；提供暂停，尊重系统减少动态效果设置，离开可见区域或切换后台后停止绘制。文字与签名共用墨色、纸白、暗红配色。交互方向参考了 [Zhiming Liu 的主页](https://mikuz12.github.io/)，未复用其代码或素材。
+About 使用为本主页设计的 Possible futures（可能的未来）交互：墨色轨迹记录经验，前方分出五条浅色预测路径。鼠标靠近会偏转并突出其中一条，点击或轻触后，选择留下墨色历史，新的分支继续出现。支持键盘选择、暂停、系统减少动态效果设置及离屏停止绘制。设计从世界模型通过交互学习的研究方向出发，使用纸白、墨色和暗红。
 
 视觉采用签名头像、固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
 

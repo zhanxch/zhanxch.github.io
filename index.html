@@ -45,14 +45,24 @@
     <main id="main">
       <section class="about" id="about" aria-labelledby="about-title">
         <p class="section-label"><span aria-hidden="true">01</span> About</p>
-        <div class="world-field">
-          <canvas class="world-canvas" aria-hidden="true"></canvas>
-          <p class="world-eyebrow">Observe <span>·</span> Interact <span>·</span> Learn</p>
-          <h2 id="about-title" class="world-title"><span>Learning</span> <span>from the world.</span></h2>
-          <div class="world-footer">
-            <button class="world-ripple" type="button" hidden aria-label="Send a ripple through the particles"><span class="ripple-mark" aria-hidden="true">◎</span><span class="world-hint">Move to explore · click to ripple</span></button>
-            <button class="world-pause" type="button" hidden aria-label="Pause animation" aria-pressed="false"><span class="pause-mark" aria-hidden="true"></span><span class="pause-label">Pause</span></button>
+        <div class="futures">
+          <div class="futures-heading"><h2 id="about-title">Possible futures<span>.</span></h2><span class="futures-note">Shaped by interaction</span></div>
+          <div class="futures-stage">
+            <canvas class="futures-canvas" aria-hidden="true"></canvas>
+            <div class="future-choices" role="group" aria-label="Choose a possible future" hidden>
+              <button type="button" class="future-choice" data-future="0" aria-label="Choose the upper path"></button>
+              <button type="button" class="future-choice" data-future="1" aria-label="Choose the upper middle path"></button>
+              <button type="button" class="future-choice" data-future="2" aria-label="Choose the middle path"></button>
+              <button type="button" class="future-choice" data-future="3" aria-label="Choose the lower middle path"></button>
+              <button type="button" class="future-choice" data-future="4" aria-label="Choose the lower path"></button>
+            </div>
+            <p class="futures-fallback">Every interaction opens a new possibility.</p>
           </div>
+          <div class="futures-footer">
+            <span class="futures-hint" hidden>Explore a path. Click to follow.</span>
+            <button class="futures-pause" type="button" hidden aria-label="Pause animation" aria-pressed="false"><span class="pause-mark" aria-hidden="true"></span><span class="pause-label">Pause</span></button>
+          </div>
+          <p class="sr-only futures-status" role="status" aria-live="polite"></p>
         </div>
         <p class="intro-copy">I’m a <strong>Ph.D. student in Computer Science</strong> at Harbin Institute of Technology, Shenzhen, working on <strong>embodied intelligence</strong> and <strong>multimodal large language models</strong>.</p>
         <p class="intro-copy">I’m interested in how models understand the world—and how that understanding evolves through interaction.</p>
