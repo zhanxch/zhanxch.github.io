@@ -44,9 +44,29 @@ main{min-width:0}
 .futures-stage{position:relative;height:350px;margin-top:14px}
 .futures-stage.can-choose{cursor:pointer}
 .futures-canvas{display:block;width:100%;height:100%}
-.future-choice{position:absolute;transform:translate(-50%,-50%);width:36px;height:36px;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
-.future-choice:focus-visible{outline:1px solid var(--accent);outline-offset:-6px;background:rgba(142,52,64,.045)}
-.future-choice:disabled{cursor:default}
+.research-fruit{position:absolute;transform:translate(-50%,-50%);width:46px;height:46px;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent;z-index:2}
+.research-fruit:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+.fruit-icon{position:relative;display:block;width:24px;height:26px;margin:auto;border-radius:43% 44% 49% 48%;background:#a34d50;box-shadow:inset -4px -2px 0 rgba(85,23,33,.11);transform:scale(var(--fruit-emerge,1));transition:transform .2s ease,box-shadow .2s ease}
+.fruit-icon:before{content:"";position:absolute;left:12px;top:-7px;height:9px;width:1.5px;background:#657957;transform:rotate(13deg);border-radius:2px}
+.fruit-icon:after{content:"";position:absolute;left:14px;top:-6px;width:11px;height:5px;background:#809470;border-radius:100% 0 100% 0;transform:rotate(-10deg)}
+.fruit-icon>span{position:absolute;left:5px;top:6px;width:3px;height:5px;background:rgba(255,241,216,.24);border-radius:50%;transform:rotate(25deg)}
+.research-fruit:hover .fruit-icon,.research-fruit:focus-visible .fruit-icon{transform:scale(1.12)}
+.research-fruit[aria-expanded="true"] .fruit-icon{box-shadow:inset -4px -2px 0 rgba(85,23,33,.11),0 0 0 5px rgba(142,52,64,.09)}
+.fruit-label{position:absolute;left:50%;top:42px;transform:translateX(-50%);white-space:nowrap;padding:0 5px;background:rgba(251,250,248,.93);border-radius:3px;font-family:var(--sans);font-size:.6875rem;line-height:1.7;color:#7e4346;letter-spacing:.025em}
+.fruit-tooltip{position:absolute;z-index:5;width:min(285px,calc(100% - 16px));padding:11px 13px;border:1px solid #e1d8cb;background:#fffdfa;box-shadow:0 5px 18px rgba(59,46,33,.07);border-radius:5px;font-family:var(--serif);font-size:1rem;line-height:1.4;color:var(--ink);pointer-events:none}
+.fruit-tooltip[hidden],.fruit-detail[hidden]{display:none}
+.fruit-detail{margin:15px 5px 5px;padding:18px 20px 19px;background:#f3f1eb;border-left:2px solid #aebba0;overflow-wrap:anywhere}
+.fruit-detail-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.fruit-detail-venue{margin:0;font-size:.75rem;color:#6e7765}
+.fruit-detail-close{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:30px;height:30px;padding:0;background:transparent;border:0;font:22px var(--sans);color:#80766d;cursor:pointer}
+.fruit-detail-close:hover{color:var(--accent)}
+.fruit-detail-close:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.fruit-detail h3{margin-bottom:9px;font-size:1.35rem;line-height:1.35}
+.fruit-detail-authors{margin:0;color:var(--muted);font-size:.8125rem;line-height:1.8}
+.fruit-detail-authors strong{font-weight:600;color:var(--ink)}
+.fruit-detail-summary{margin:12px 0 10px;color:var(--body);font-size:.9375rem;line-height:1.7}
+.fruit-detail-link{font-size:.8125rem;color:var(--accent)}
+.fruit-detail-link span{margin-left:5px}
 .futures-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;margin:0;color:var(--muted);font-family:var(--serif);font-size:1.25rem}
 .is-ready .futures-fallback{display:none}
 .futures-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 6px 0;min-height:42px}
@@ -112,6 +132,7 @@ h1{grid-column:2;margin:0 0 8px;font-size:1.7rem;align-self:end}
 .futures-heading h2{font-size:1.65rem}
 .futures-note{font-size:.5625rem}
 .futures-stage{height:305px;margin-top:10px}
+.fruit-detail{margin-left:0;margin-right:0;padding:14px 15px 16px}
 .futures-footer{padding-left:0;padding-right:0}
 .interest-line{margin-top:23px;gap:6px 15px}
 .research{margin-top:43px}
