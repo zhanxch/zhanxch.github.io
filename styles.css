@@ -44,6 +44,8 @@ main{min-width:0}
 .education-entry{display:grid;grid-template-columns:54px minmax(0,1fr);gap:19px;padding:18px 0;border-bottom:1px solid #ebe7e2}
 .school-code{font-size:.75rem;letter-spacing:.04em;color:var(--accent);padding-top:3px;font-weight:600}
 .education-entry h3{font-family:var(--sans);font-size:.9375rem;font-weight:600;line-height:1.5;margin:0 0 4px;letter-spacing:0}
+.education-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.education-period{flex-shrink:0;font-size:.75rem;line-height:1.5;white-space:nowrap;color:var(--muted)}
 .education-entry p{margin:0;color:var(--muted);font-size:.875rem;line-height:1.65}
 .publication{padding:24px 0 27px;border-top:1px solid var(--line)}
 .paper-topline{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;margin-bottom:14px}
@@ -89,6 +91,8 @@ h1{grid-column:2;margin:0 0 8px;font-size:1.7rem;align-self:end}
 .publication{padding:23px 0 25px}
 h3{font-size:1.3rem}
 .education-entry{grid-template-columns:45px minmax(0,1fr);gap:13px;padding:17px 0}
+.education-heading{display:block;margin-bottom:5px}
+.education-period{display:block}
 .paper-topline{margin-bottom:13px;gap:9px}
 .paper-venue{font-size:.75rem}
 .paper-summary{font-size:1rem}
