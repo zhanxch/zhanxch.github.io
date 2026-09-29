@@ -28,7 +28,9 @@ Academic homepage: **https://zhanxch.github.io/**.
 
 直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航，`about-motion.js` 负责 About 交互动画。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
 
-About 使用破土嫩芽：土面轻轻分开，细茎探出后展开两片灰绿色叶子，配文 Still early. Still growing.（尚在起步，仍在生长）。动画在首次进入可见区域时播放一次，完成后保持静止；鼠标靠近时轻轻倾斜，提供键盘和触摸可用的重播按钮。尊重减少动态效果设置，切到后台或离开可见区域时暂停。原有三篇论文保留在正常列表中。
+About 使用原创的粒子山脉：程序化地形通过点云、山脊遮挡与坡面明暗形成远近层次。鼠标经过时粒子像被风吹动，离开后恢复；Breeze 按钮（键盘和触摸可用）与轻触山景都可吹过一阵风。静止后停止绘制，离开屏幕或后台时暂停。减少动态效果设置与无 JavaScript 模式下保留同一山景的静态 SVG。
+
+配文 **Altiora peto — I seek higher things.**（向更高处求索）。这是实际使用的拉丁格言，非古代登山名句；释义可参照 [Warwick Junior School](https://www.warwickjuniorschool.co.uk/about-us/welcome-from-the-head-master/)。
 
 视觉采用签名头像、固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
 

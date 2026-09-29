@@ -45,36 +45,16 @@
     <main id="main">
       <section class="about" id="about" aria-labelledby="about-title">
         <p class="section-label"><span aria-hidden="true">01</span> About</p>
-        <div class="emergence">
-          <div class="sprout-scene">
-            <svg class="sprout-art" viewBox="0 0 320 185" role="img" aria-label="A small green seedling emerging through the soil">
-              <ellipse cx="158" cy="148" rx="54" ry="3" fill="#a6a08c" opacity=".07"/>
-              <g class="sprout-plant">
-                <path class="sprout-stem" pathLength="1" d="M158 145 C154 129 166 110 163 86" fill="none" stroke="#768463" stroke-width="2.8" stroke-linecap="round"/>
-                <g class="sprout-leaf leaf-left">
-                  <path d="M162 107 C137 112 116 97 111 78 C135 77 159 85 162 107Z" fill="#a3b48a"/>
-                  <path d="M160 105 Q138 92 116 81" fill="none" stroke="#dce3c8" stroke-width=".8" opacity=".85"/>
-                </g>
-                <g class="sprout-leaf leaf-right">
-                  <path d="M163 87 C161 64 181 45 201 45 C199 66 185 84 163 87Z" fill="#7e966e"/>
-                  <path d="M165 84 Q181 68 198 48" fill="none" stroke="#d6dfbd" stroke-width=".8" opacity=".8"/>
-                </g>
-              </g>
-              <g fill="none" stroke="#aa9e89" stroke-linecap="round">
-                <path class="soil-left" d="M67 149 C92 147 113 149 134 147 Q145 143 154 147" stroke-width=".85" opacity=".55"/>
-                <path class="soil-right" d="M163 147 Q173 143 185 147 C207 148 228 147 250 149" stroke-width=".85" opacity=".55"/>
-                <path d="M114 155 Q133 156 143 155 M177 155 Q195 156 210 154" stroke-width=".55" opacity=".2"/>
-              </g>
-              <g class="soil-grains" fill="#a39178" opacity=".4">
-                <ellipse cx="150" cy="150" rx="1.6" ry=".85" transform="rotate(-20 150 150)"/>
-                <ellipse cx="169" cy="149" rx="1.8" ry=".8" transform="rotate(12 169 149)"/>
-                <ellipse cx="177" cy="151" rx=".85" ry=".6"/>
-              </g>
-            </svg>
+        <figure class="mountain-about">
+          <div class="mountain-scene" role="img" aria-label="An ink-like mountain range made of thousands of small points. Moving over the landscape stirs the points like wind.">
+            <img class="mountain-still" src="assets/mountains.svg" alt="" width="670" height="300">
+            <canvas class="mountain-canvas" width="670" height="300" aria-hidden="true"></canvas>
           </div>
-          <h2 id="about-title" class="sprout-caption"><span>Still early.</span> <span>Still growing.</span></h2>
-          <button class="sprout-replay" type="button" hidden aria-label="Replay the seedling growth animation"><span aria-hidden="true">↻</span> Replay</button>
-        </div>
+          <figcaption class="mountain-caption">
+            <div><h2 id="about-title" lang="la">Altiora peto<span aria-hidden="true">.</span></h2><p>I seek higher things.</p></div>
+            <button class="mountain-breeze" type="button" hidden aria-label="Send a breeze through the mountains"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h12a3 3 0 1 0-3-3M3 12h16a2 2 0 1 1-2 2M6 16h4a2.5 2.5 0 1 1-2.5 2.5"/></svg><span>Breeze</span></button>
+          </figcaption>
+        </figure>
         <p class="intro-copy">I’m a <strong>Ph.D. student in Computer Science</strong> at Harbin Institute of Technology, Shenzhen, working on <strong>embodied intelligence</strong> and <strong>multimodal large language models</strong>.</p>
         <p class="intro-copy">I’m interested in how models understand the world—and how that understanding evolves through interaction.</p>
       </section>
