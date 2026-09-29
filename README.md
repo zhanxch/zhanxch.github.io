@@ -28,9 +28,9 @@ Academic homepage: **https://zhanxch.github.io/**.
 
 直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航，`about-motion.js` 负责 About 交互动画。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
 
-About 使用原创的粒子山脉：程序化地形通过点云、山脊遮挡与坡面明暗形成远近层次。鼠标经过时粒子像被风吹动，离开后恢复；Breeze 按钮（键盘和触摸可用）与轻触山景都可吹过一阵风。静止后停止绘制，离开屏幕或后台时暂停。减少动态效果设置与无 JavaScript 模式下保留同一山景的静态 SVG。
+About 改为草原水彩：金色草地、伞形金合欢与开阔天空，配暖褐色点缀。插画使用内置 imagegen 生成，保存在 `assets/savanna-watercolor.webp`，生成提示词保存在 `assets/savanna-watercolor-prompt.txt`。前景草叶为独立 SVG，在初次进入画面、鼠标经过、轻触或 Breeze 按钮触发时短暂随风摇动；结束后静止，离开可见区域或切到后台时暂停。尊重减少动态效果设置，无 JavaScript 时仍完整展示插画与文字。
 
-配文 **Altiora peto — I seek higher things.**（向更高处求索）。这是实际使用的拉丁格言，非古代登山名句；释义可参照 [Warwick Junior School](https://www.warwickjuniorschool.co.uk/about-us/welcome-from-the-head-master/)。
+配文选自 Walt Whitman《Song of the Open Road》：“Healthy, free, the world before me,”。保留原诗逗号；参见 [Academy of American Poets 原文](https://poets.org/poem/song-open-road-1)。中文意译：身心轻健，自由自在，世界就在眼前。
 
 视觉采用签名头像、固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
 

@@ -1,0 +1,10 @@
+Generated with the built-in imagegen tool, 2026-09-29.
+
+Use case: illustration-story.
+Asset type: a refined panoramic illustration for the About section of a personal academic website, displayed at 670 by 290 CSS pixels on warm ivory paper (#fbfaf8).
+Primary request: the spacious feeling of a Kenyan savanna, freedom and the anticipation of travel.
+Scene: a very wide open East African grassland with a low horizon, softly layered distant hills, one beautifully observed umbrella-shaped acacia slightly right of center and a much smaller faraway tree, sun-dried grasses catching the late-afternoon light. A pale small sun in the spacious sky. Keep the landscape recognizable and naturally proportioned.
+Style: sophisticated editorial watercolor and fine pencil on paper, restrained, atmospheric, delicately textured; elegant travel journal illustration for an adult, not a children's book or a tourism poster. Flowing golden-ochre and muted olive washes; soft warm grey distant hills; dark olive-brown acacia. No photographic rendering.
+Composition: extra-wide horizontal panorama approximately 2.5:1, about 40 percent open sky; generous breathing room around the tree. A few fine grasses in the lower foreground, not a dense wall. Naturally irregular watercolor edges softly disappear into near-white ivory around all four sides, especially the bottom, so the image visually belongs to the page rather than a rectangular picture card.
+Lighting/mood: quiet, expansive, sun-warmed, light and free. Soft contrast but enough fine detail to feel designed.
+Constraints: no text, letters, logos, watermark, frame or border. No humans, animals, cars, roads or buildings. No dramatic mountains, neon colors, particles, geometric polygons or glossy 3D. The landscape must be the artwork only, not a website mockup.
