@@ -27,11 +27,9 @@ Academic homepage: **https://zhanxch.github.io/**.
 
 ## 后续修改
 
-直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航，`about-motion.js` 负责 About 交互动画。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
+直接编辑 `index.html` 即可修改个人信息和论文，`styles.css` 控制外观，`site.js` 负责滚动导航。无构建步骤，无第三方脚本；所有字体和签名图片均随站点提供。所有论文内容在 HTML 中，即使关闭 JavaScript 也可阅读。
 
-About 改为草原水彩：金色草地、伞形金合欢与开阔天空，配暖褐色点缀。插画使用内置 imagegen 生成，保存在 `assets/savanna-watercolor.webp`，生成提示词保存在 `assets/savanna-watercolor-prompt.txt`。前景草叶为独立 SVG，在初次进入画面、鼠标经过、轻触或 Breeze 按钮触发时短暂随风摇动；结束后静止，离开可见区域或切到后台时暂停。尊重减少动态效果设置，无 JavaScript 时仍完整展示插画与文字。
-
-配文选自 Walt Whitman《Song of the Open Road》：“Healthy, free, the world before me,”。保留原诗逗号；参见 [Academy of American Poets 原文](https://poets.org/poem/song-open-road-1)。中文意译：身心轻健，自由自在，世界就在眼前。
+草原水彩（`assets/savanna-watercolor.webp`，提示词见 `assets/savanna-watercolor-prompt.txt`）作为首屏底部的虚化背景，不再单独成框。
 
 视觉（2026-11 改版）：顶部吸顶导航 + 大字号 hero（姓名、签名卡片）、水彩草原全景、三栏研究方向、带示意线稿的论文卡片、横向教育时间轴和深绿色页脚。主色取自 Z 头像的森林绿，点缀色取自水彩的赭黄。论文卡片中的线稿为手写 SVG 示意，不是论文原图。部分文案由 Gemini 起草后人工精简。
 

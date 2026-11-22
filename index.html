@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
   <script src="site.js" defer></script>
-  <script src="about-motion.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,7 +29,7 @@
       </a>
       <nav class="nav" aria-label="Main navigation">
         <a href="#about" aria-current="location">About</a>
-        <a href="#interests">Questions</a>
+        <a href="#interests">Focus</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
@@ -41,11 +40,12 @@
 
   <main id="main">
     <section class="wrap hero" id="about" aria-labelledby="name">
+      <div class="hero-backdrop" aria-hidden="true"><img src="assets/savanna-watercolor.webp" alt="" width="1905" height="825"></div>
       <div class="hero-text">
         <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Ph.D. student · HIT Shenzhen</p>
         <h1 id="name" class="reveal"><span>Xiangcheng</span><span class="surname">Zhan</span></h1>
         <p class="hero-line reveal">How models understand the world—and revise that understanding through interaction.</p>
-        <p class="hero-bio reveal">I’m a Ph.D. student in Computer Science at <a class="link" href="https://en.hitsz.edu.cn/">Harbin Institute of Technology, Shenzhen</a>. I work on <strong>embodied intelligence</strong>, <strong>world-action models</strong>, and <strong>multimodal large language models</strong>, asking how models ground and update what they know about the world as they act in it.</p>
+        <p class="hero-bio reveal">I’m a Ph.D. student in Computer Science at <a class="link" href="https://en.hitsz.edu.cn/">Harbin Institute of Technology, Shenzhen</a>. I’m interested in <strong>recursive self-improvement (RSI)</strong> for <strong>embodied agents</strong>: building agents and <strong>world-action models</strong> that improve themselves in the <strong>physical world</strong>.</p>
         <div class="hero-actions reveal">
           <a class="btn btn-primary" href="mailto:zhanxch@foxmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>zhanxch@foxmail.com</a>
           <a class="btn btn-ghost" href="https://github.com/zhanxch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.3a2.9 2.9 0 0 0-.8-2.2c2.7-.3 5.5-1.3 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.5 2.3 5.5 2.6 5.5 2.6a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9c0 4.6 2.8 5.7 5.5 6a2.9 2.9 0 0 0-.8 2.2V21"/></svg>GitHub</a>
@@ -57,7 +57,7 @@
         <div class="signature-card">
           <img class="signature" src="assets/signature.png" alt="Handwritten signature of Xiangcheng Zhan" width="1254" height="1254">
           <div class="signature-meta">
-            <div><b>Currently</b>Agents that learn from experience and improve themselves</div>
+            <div><b>Currently</b>Recursive self-improvement for physical intelligence</div>
             <img src="assets/profile-avatar.png" alt="Z monogram" width="500" height="500">
           </div>
         </div>
@@ -68,48 +68,39 @@
       </aside>
     </section>
 
-    <figure class="wrap panorama reveal" aria-label="Watercolor of a savanna with a line from Walt Whitman">
-      <div class="savanna-scene">
-        <img class="savanna-art" src="assets/savanna-watercolor.webp" alt="A watercolor of golden savanna grass, an umbrella-shaped acacia, and a wide, sunlit sky." width="1905" height="825" fetchpriority="high">
-        <svg class="savanna-grass" viewBox="0 0 670 290" aria-hidden="true" focusable="false"><g class="grass-tuft" data-x="31.0" style="transform-origin:31.0px 260.7px" opacity="0.33"><path d="M31.0 260.7 Q30.3 254.0 25.9 245.0"/><path d="M25.9 247.0 l-2 -3 m2 5 l2 -3"/><path d="M31.0 260.7 Q32.3 257.0 41.1 248.0"/><path d="M31.0 260.7 Q31.9 240.4 38.1 231.4"/></g><g class="grass-tuft" data-x="62.5" style="transform-origin:62.5px 256.4px" opacity="0.42"><path d="M62.5 256.4 Q62.6 251.2 63.3 242.2"/><path d="M63.3 244.2 l-2 -3 m2 5 l2 -3"/><path d="M62.5 256.4 Q62.7 246.2 63.9 237.2"/><path d="M62.5 256.4 Q61.8 246.8 56.6 237.8"/></g><g class="grass-tuft" data-x="83.0" style="transform-origin:83.0px 251.0px" opacity="0.33"><path d="M83.0 251.0 Q83.1 238.3 83.9 229.3"/><path d="M83.9 231.3 l-2 -3 m2 5 l2 -3"/><path d="M83.0 251.0 Q84.5 240.0 94.7 231.0"/><path d="M83.0 251.0 Q84.0 247.1 90.9 238.1"/></g><g class="grass-tuft" data-x="110.6" style="transform-origin:110.6px 258.0px" opacity="0.34"><path d="M110.6 258.0 Q111.0 251.7 114.1 242.7"/><path d="M114.1 244.7 l-2 -3 m2 5 l2 -3"/><path d="M110.6 258.0 Q111.9 242.9 121.0 233.9"/><path d="M110.6 258.0 Q110.4 247.4 109.4 238.4"/></g><g class="grass-tuft" data-x="130.4" style="transform-origin:130.4px 256.3px" opacity="0.45"><path d="M130.4 256.3 Q130.3 244.7 129.2 235.7"/><path d="M129.2 237.7 l-2 -3 m2 5 l2 -3"/><path d="M130.4 256.3 Q131.3 251.7 136.7 242.7"/><path d="M130.4 256.3 Q129.8 249.4 125.1 240.4"/></g><g class="grass-tuft" data-x="155.2" style="transform-origin:155.2px 255.9px" opacity="0.46"><path d="M155.2 255.9 Q154.9 249.4 153.1 240.4"/><path d="M153.1 242.4 l-2 -3 m2 5 l2 -3"/><path d="M155.2 255.9 Q154.7 236.9 151.6 227.9"/><path d="M155.2 255.9 Q155.9 233.3 160.1 224.3"/></g><g class="grass-tuft" data-x="184.7" style="transform-origin:184.7px 254.1px" opacity="0.28"><path d="M184.7 254.1 Q185.1 248.3 187.7 239.3"/><path d="M187.7 241.3 l-2 -3 m2 5 l2 -3"/><path d="M184.7 254.1 Q184.0 236.0 179.3 227.0"/><path d="M184.7 254.1 Q184.6 231.5 184.0 222.5"/></g><g class="grass-tuft" data-x="205.4" style="transform-origin:205.4px 262.8px" opacity="0.32"><path d="M205.4 262.8 Q205.9 256.8 209.3 247.8"/><path d="M209.3 249.8 l-2 -3 m2 5 l2 -3"/><path d="M205.4 262.8 Q206.8 252.6 216.0 243.6"/><path d="M205.4 262.8 Q204.9 256.0 201.5 247.0"/></g><g class="grass-tuft" data-x="234.0" style="transform-origin:234.0px 261.1px" opacity="0.37"><path d="M234.0 261.1 Q233.4 250.3 228.7 241.3"/><path d="M228.7 243.3 l-2 -3 m2 5 l2 -3"/><path d="M234.0 261.1 Q234.8 244.4 239.7 235.4"/><path d="M234.0 261.1 Q235.0 245.3 241.0 236.3"/></g><g class="grass-tuft" data-x="263.6" style="transform-origin:263.6px 253.9px" opacity="0.29"><path d="M263.6 253.9 Q264.3 240.0 269.0 231.0"/><path d="M269.0 233.0 l-2 -3 m2 5 l2 -3"/><path d="M263.6 253.9 Q264.3 248.9 269.1 239.9"/><path d="M263.6 253.9 Q263.1 233.9 259.6 224.9"/></g><g class="grass-tuft" data-x="282.7" style="transform-origin:282.7px 251.4px" opacity="0.31"><path d="M282.7 251.4 Q282.8 243.8 282.9 234.8"/><path d="M282.9 236.8 l-2 -3 m2 5 l2 -3"/><path d="M282.7 251.4 Q281.8 230.5 275.6 221.5"/><path d="M282.7 251.4 Q282.5 234.0 280.8 225.0"/></g><g class="grass-tuft" data-x="314.5" style="transform-origin:314.5px 261.4px" opacity="0.26"><path d="M314.5 261.4 Q313.9 250.7 310.4 241.7"/><path d="M310.4 243.7 l-2 -3 m2 5 l2 -3"/><path d="M314.5 261.4 Q314.1 257.6 311.8 248.6"/><path d="M314.5 261.4 Q314.3 252.0 312.8 243.0"/></g><g class="grass-tuft" data-x="331.1" style="transform-origin:331.1px 262.7px" opacity="0.36"><path d="M331.1 262.7 Q332.2 245.0 339.7 236.0"/><path d="M339.7 238.0 l-2 -3 m2 5 l2 -3"/><path d="M331.1 262.7 Q331.2 252.8 332.1 243.8"/><path d="M331.1 262.7 Q330.7 241.0 328.3 232.0"/></g><g class="grass-tuft" data-x="365.0" style="transform-origin:365.0px 251.3px" opacity="0.29"><path d="M365.0 251.3 Q365.7 238.1 370.0 229.1"/><path d="M370.0 231.1 l-2 -3 m2 5 l2 -3"/><path d="M365.0 251.3 Q365.2 229.8 366.3 220.8"/><path d="M365.0 251.3 Q364.3 242.0 359.4 233.0"/></g><g class="grass-tuft" data-x="381.7" style="transform-origin:381.7px 262.2px" opacity="0.36"><path d="M381.7 262.2 Q382.8 248.3 390.6 239.3"/><path d="M390.6 241.3 l-2 -3 m2 5 l2 -3"/><path d="M381.7 262.2 Q380.7 254.3 374.0 245.3"/><path d="M381.7 262.2 Q381.6 244.1 380.7 235.1"/></g><g class="grass-tuft" data-x="408.4" style="transform-origin:408.4px 251.9px" opacity="0.46"><path d="M408.4 251.9 Q408.7 240.3 410.8 231.3"/><path d="M410.8 233.3 l-2 -3 m2 5 l2 -3"/><path d="M408.4 251.9 Q409.5 246.8 417.2 237.8"/><path d="M408.4 251.9 Q409.4 241.7 416.4 232.7"/></g><g class="grass-tuft" data-x="436.4" style="transform-origin:436.4px 257.7px" opacity="0.39"><path d="M436.4 257.7 Q437.1 245.1 441.5 236.1"/><path d="M441.5 238.1 l-2 -3 m2 5 l2 -3"/><path d="M436.4 257.7 Q437.2 250.3 442.8 241.3"/><path d="M436.4 257.7 Q435.9 236.7 432.9 227.7"/></g><g class="grass-tuft" data-x="462.3" style="transform-origin:462.3px 255.0px" opacity="0.39"><path d="M462.3 255.0 Q462.1 246.5 460.5 237.5"/><path d="M460.5 239.5 l-2 -3 m2 5 l2 -3"/><path d="M462.3 255.0 Q461.7 251.7 457.3 242.7"/><path d="M462.3 255.0 Q461.3 235.4 454.6 226.4"/></g><g class="grass-tuft" data-x="486.7" style="transform-origin:486.7px 253.7px" opacity="0.44"><path d="M486.7 253.7 Q486.9 234.5 488.2 225.5"/><path d="M488.2 227.5 l-2 -3 m2 5 l2 -3"/><path d="M486.7 253.7 Q487.2 250.7 490.8 241.7"/><path d="M486.7 253.7 Q487.7 250.5 494.2 241.5"/></g><g class="grass-tuft" data-x="509.4" style="transform-origin:509.4px 251.1px" opacity="0.30"><path d="M509.4 251.1 Q509.5 231.9 510.4 222.9"/><path d="M510.4 224.9 l-2 -3 m2 5 l2 -3"/><path d="M509.4 251.1 Q510.7 244.9 519.7 235.9"/><path d="M509.4 251.1 Q510.5 243.2 517.8 234.2"/></g><g class="grass-tuft" data-x="538.4" style="transform-origin:538.4px 256.4px" opacity="0.34"><path d="M538.4 256.4 Q537.8 241.2 533.7 232.2"/><path d="M533.7 234.2 l-2 -3 m2 5 l2 -3"/><path d="M538.4 256.4 Q537.9 239.8 534.3 230.8"/><path d="M538.4 256.4 Q539.3 252.2 544.8 243.2"/></g><g class="grass-tuft" data-x="558.0" style="transform-origin:558.0px 255.1px" opacity="0.31"><path d="M558.0 255.1 Q559.1 241.9 566.2 232.9"/><path d="M566.2 234.9 l-2 -3 m2 5 l2 -3"/><path d="M558.0 255.1 Q558.5 246.8 561.6 237.8"/><path d="M558.0 255.1 Q558.6 245.8 562.4 236.8"/></g><g class="grass-tuft" data-x="591.2" style="transform-origin:591.2px 254.3px" opacity="0.44"><path d="M591.2 254.3 Q590.9 234.1 589.1 225.1"/><path d="M589.1 227.1 l-2 -3 m2 5 l2 -3"/><path d="M591.2 254.3 Q591.8 245.0 595.9 236.0"/><path d="M591.2 254.3 Q592.5 245.4 600.9 236.4"/></g><g class="grass-tuft" data-x="612.5" style="transform-origin:612.5px 257.4px" opacity="0.42"><path d="M612.5 257.4 Q613.2 247.7 617.9 238.7"/><path d="M617.9 240.7 l-2 -3 m2 5 l2 -3"/><path d="M612.5 257.4 Q613.5 247.6 620.6 238.6"/><path d="M612.5 257.4 Q612.7 245.3 614.1 236.3"/></g></svg>
-      </div>
-      <figcaption class="panorama-caption">
-        <blockquote cite="https://poets.org/poem/song-open-road-1">
-          <p class="verse">Healthy, free, the world before me<span class="quote-comma">,</span></p>
-          <p class="source">Walt Whitman · <cite><a href="https://poets.org/poem/song-open-road-1">Song of the Open Road</a></cite></p>
-        </blockquote>
-        <button class="savanna-breeze" type="button" hidden aria-label="Let the grass sway in the wind"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h12a3 3 0 1 0-3-3M3 12h16a2 2 0 1 1-2 2M6 16h4a2.5 2.5 0 1 1-2.5 2.5"/></svg>Breeze</button>
-      </figcaption>
-    </figure>
 
     <section class="wrap section" id="interests" aria-labelledby="interests-title">
       <header class="section-head reveal">
-        <div><p class="kicker">01 — Questions</p><h2 id="interests-title">Questions I’m working on</h2></div>
-        <p>These move as the work does. Each links to what I have done on it so far.</p>
+        <div><p class="kicker">01 — Focus</p><h2 id="interests-title">Self-improving physical intelligence</h2></div>
+        <p>Recursive self-improvement for embodied agents rests on three parts that depend on one another: infrastructure to run the loop, methods to learn from it, and evaluation to decide what is kept.</p>
       </header>
-      <div class="themes">
-        <article class="theme reveal">
-          <span class="theme-num">i.</span>
+      <ol class="themes">
+        <li class="theme reveal">
+          <span class="theme-num">01</span>
+          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="10" width="52" height="36" rx="4"/><path d="M6 19h52M24 56h16M32 46v10"/><path class="accent" d="m14 38 9-9 7 5 12-12 8 5"/><circle class="fill" cx="42" cy="22" r="2.2"/></svg>
+          <h3>Infrastructure</h3>
+          <p class="theme-lede">Systems that run the loop</p>
+          <p>Simulators, robots, and agent software joined into one loop, where agents act, propose changes to themselves, and every round is logged and reproducible.</p>
+          <ul class="theme-work"><li><a href="#projects">RoboUse-RSI <span>soon</span></a></li><li><a href="#studio-title">visual RSI studio</a></li><li><a href="#dsh-title">dsh-robotics</a></li></ul>
+        </li>
+        <li class="theme reveal">
+          <span class="theme-num">02</span>
           <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="17"/><path d="M15 32h34M32 15c-6 5-6 29 0 34M32 15c6 5 6 29 0 34"/><path class="accent" d="M8 24a26 26 0 0 1 44-11"/><path class="accent" d="m52 7 .3 6.4L46 14"/><path class="accent" d="M56 40a26 26 0 0 1-44 11"/><path class="accent" d="m12 57-.3-6.4L18 50"/></svg>
-          <h3>How do agents get better from their own experience?</h3>
-          <p>Successes and failures, after deployment and within a single episode, as signals for refining what a model knows about the world and how it acts.</p>
-          <ul class="theme-work"><li><a href="#dewo-title">DEWO</a></li><li><a href="#robox-title">RoboExperience</a></li></ul>
-        </article>
-        <article class="theme reveal">
-          <span class="theme-num">ii.</span>
-          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 50c8 2 14-2 18-8s10-9 18-8"/><path d="M14 38c6 1 10-2 13-6s8-7 14-6"/><path d="M18 26c4 .5 7-1.5 9-4s6-5 10-4"/><path class="accent" d="M46 34l8 0M54 34l-3-3M54 34l-3 3"/><circle class="fill" cx="46" cy="34" r="2.2"/><path class="accent" d="M8 58h48"/></svg>
-          <h3>Can embodied agents improve themselves?</h3>
-          <p>Agent recursive self-improvement: propose a change, verify it on real tasks, and keep only what measurably helps.</p>
-          <ul class="theme-work"><li><a href="#projects">RoboUse-RSI <span>soon</span></a></li><li><a href="#studio-title">visual RSI studio</a></li></ul>
-        </article>
-        <article class="theme reveal">
-          <span class="theme-num">iii.</span>
-          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="12" width="30" height="24" rx="3"/><path d="m10 32 8-9 6 6 4-4 6 7"/><circle class="accent" cx="28" cy="19" r="2.5"/><path d="M42 30h16M42 37h12M42 44h16M28 50h22"/><path class="accent" d="M21 40v6a4 4 0 0 0 4 4h1"/></svg>
-          <h3>What should an agent rely on as models improve?</h3>
-          <p>Which tools and harnesses keep paying off, and how far the model itself can be trusted to see what is actually there.</p>
-          <ul class="theme-work"><li><a href="#halflife-title">Half-Life law</a></li><li><a href="#rot-title">ROT</a></li></ul>
-        </article>
-      </div>
+          <h3>Methods</h3>
+          <p class="theme-lede">Learning from deployment experience</p>
+          <p>Post-deployment learning for world-action models, faithful perception in vision–language models, and experience retrieval for robot agents. Each starts from an analysis of which signal is worth learning from.</p>
+          <ul class="theme-work"><li><a href="#dewo-title">DEWO</a></li><li><a href="#rot-title">ROT</a></li><li><a href="#robox-title">RoboExperience</a></li></ul>
+        </li>
+        <li class="theme reveal">
+          <span class="theme-num">03</span>
+          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="8" width="34" height="46" rx="4"/><path d="M16 20h18M16 30h18M16 40h10"/><circle class="accent" cx="46" cy="44" r="11"/><path class="accent" d="m40.5 44 4 4 7-7.5"/></svg>
+          <h3>Evaluation</h3>
+          <p class="theme-lede">Measuring what actually improves</p>
+          <p>Physical trials are costly and noisy, so self-improvement needs measurements it can trust: eval harnesses and benchmarks that evolve with the agents they test, and laws for which scaffolding stops paying off as models improve.</p>
+          <ul class="theme-work"><li><a href="#halflife-title">Half-Life law</a></li><li><em class="plan">Evolving embodied benchmarks <span>planned</span></em></li></ul>
+        </li>
+      </ol>
+      <p class="loop-back reveal"><span>What passes evaluation goes back into the infrastructure, and the next round starts from there.</span></p>
     </section>
 
     <section class="wrap section" id="research" aria-labelledby="research-title">
