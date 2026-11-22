@@ -7,7 +7,7 @@ Academic homepage: **https://zhanxch.github.io/**.
 - 个人资料由本人提供：Xiangcheng Zhan，哈尔滨工业大学（深圳），zhanxch@foxmail.com；研究方向为具身智能、多模态大模型。
 - DEWO 的标题、五位作者、简介及 ICLR 2027 在投状态由本人提供，明确标注 Under review。
 - ROT 的标题、EMNLP 2026 Oral 和三位作者顺序由本人提供。
-- 按本人要求，DEWO 与 ROT 均不附论文、代码或项目链接。
+- DEWO 附 arXiv 链接（arXiv:2609.37398）。ROT 附 ACL Anthology 官方页面（2026.emnlp-main.1442）、PDF、arXiv（2610.06056）与第一作者的代码仓库 Rooselyn/ROT。作者顺序已与官方页面核对。
 - 牙菌斑工作来自 [HKU Scholars Hub](https://hub.hku.hk/handle/10722/359253)，按资料库的 Conference_Paper 类型及 Journal of Clinical Periodontology 52(S28) 信息展示。放在 Earlier work，保留完整研究经历。
 - 页面仅包含已确认适合展示的研究内容。
 - 个人栏展示绿色 Z 字头像和本人姓名的原创手写签名图。
@@ -32,8 +32,8 @@ About 改为草原水彩：金色草地、伞形金合欢与开阔天空，配�
 
 配文选自 Walt Whitman《Song of the Open Road》：“Healthy, free, the world before me,”。保留原诗逗号；参见 [Academy of American Poets 原文](https://poets.org/poem/song-open-road-1)。中文意译：身心轻健，自由自在，世界就在眼前。
 
-视觉采用固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
+视觉（2026-11 改版）：顶部吸顶导航 + 大字号 hero（姓名、签名卡片）、水彩草原全景、三栏研究方向、带示意线稿的论文卡片、横向教育时间轴和深绿色页脚。主色取自 Z 头像的森林绿，点缀色取自水彩的赭黄。论文卡片中的线稿为手写 SVG 示意，不是论文原图。部分文案由 Gemini 起草后人工精简。
 
 字体使用 DM Sans 与 Newsreader，许可证保存在 `assets/fonts/`。
 
-ROT 的 ACL Anthology 页面公开后可补充对应链接。其他工作决定公开且有可公开材料后再加入；若仍在审稿，清楚区分投稿状态与已接收论文。
+其他工作决定公开且有可公开材料后再加入；若仍在审稿，清楚区分投稿状态与已接收论文。

@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fbfaf8">
-  <meta name="description" content="Xiangcheng Zhan at Harbin Institute of Technology, Shenzhen. Research in embodied intelligence, world-action models, and multimodal large language models.">
+  <meta name="theme-color" content="#fbf8f1">
+  <meta name="description" content="Xiangcheng Zhan, Ph.D. student at Harbin Institute of Technology, Shenzhen. Research in embodied intelligence, world-action models, and multimodal large language models.">
   <meta property="og:title" content="Xiangcheng Zhan — Research">
-  <meta property="og:description" content="Embodied intelligence and multimodal large language models.">
+  <meta property="og:description" content="How models understand the world, and revise that understanding through interaction.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zhanxch.github.io/">
   <title>Xiangcheng Zhan — Research</title>
@@ -15,92 +15,250 @@
   <link rel="preload" href="assets/fonts/newsreader-medium.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/fonts/dm-sans-regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
   <script src="site.js" defer></script>
   <script src="about-motion.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="site-layout">
-    <aside class="identity" aria-label="Profile and navigation">
-      <div class="profile">
-        <div class="profile-art">
-          <img class="profile-avatar" src="assets/profile-avatar.png" alt="Xiangcheng Zhan’s Z monogram avatar" width="500" height="500">
-          <a class="profile-signature" href="#about" aria-label="Xiangcheng Zhan, back to about">
-            <img src="assets/signature.png" alt="Handwritten signature of Xiangcheng Zhan" width="1254" height="1254">
-          </a>
-        </div>
-        <h1>Xiangcheng Zhan</h1>
-        <p class="affiliation"><a href="https://en.hitsz.edu.cn/">Harbin Institute of Technology,<br>Shenzhen</a></p>
-        <div class="social-links">
-          <a href="mailto:zhanxch@foxmail.com">Email <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/zhanxch">GitHub <span aria-hidden="true">↗</span></a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#about" aria-label="Xiangcheng Zhan, back to top">
+        <img src="assets/profile-avatar.png" alt="" width="500" height="500">
+        <span>Xiangcheng Zhan</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about" aria-current="location">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a class="nav-cta" href="mailto:zhanxch@foxmail.com">Say hello</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero" id="about" aria-labelledby="name">
+      <div class="hero-text">
+        <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Ph.D. student · HIT Shenzhen</p>
+        <h1 id="name" class="reveal"><span>Xiangcheng</span><span class="surname">Zhan</span></h1>
+        <p class="hero-line reveal">How models understand the world—and revise that understanding through interaction.</p>
+        <p class="hero-bio reveal">I’m a Ph.D. student in Computer Science at <a class="link" href="https://en.hitsz.edu.cn/">Harbin Institute of Technology, Shenzhen</a>. I work on <strong>embodied intelligence</strong>, <strong>world-action models</strong>, and <strong>multimodal large language models</strong>, asking how models ground and update what they know about the world as they act in it.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="mailto:zhanxch@foxmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>zhanxch@foxmail.com</a>
+          <a class="btn btn-ghost" href="https://github.com/zhanxch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.3a2.9 2.9 0 0 0-.8-2.2c2.7-.3 5.5-1.3 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.5 2.3 5.5 2.6 5.5 2.6a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9c0 4.6 2.8 5.7 5.5 6a2.9 2.9 0 0 0-.8 2.2V21"/></svg>GitHub</a>
+          <span class="hero-place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>Shenzhen, China</span>
         </div>
       </div>
-      <nav class="section-nav" aria-label="Main navigation">
-        <a href="#about" aria-current="location"><span class="nav-line" aria-hidden="true"></span>About</a>
-        <a href="#experience"><span class="nav-line" aria-hidden="true"></span>Experience</a>
-        <a href="#research"><span class="nav-line" aria-hidden="true"></span>Research</a>
-        <a href="#earlier"><span class="nav-line" aria-hidden="true"></span>Earlier work</a>
-      </nav>
-      <div class="rail-foot"><span>Shenzhen, China</span><a href="mailto:zhanxch@foxmail.com">zhanxch@foxmail.com</a></div>
-    </aside>
 
-    <main id="main">
-      <section class="about" id="about" aria-labelledby="about-title">
-        <p class="section-label"><span aria-hidden="true">01</span> About</p>
-        <figure class="savanna-about">
-          <div class="savanna-scene">
-            <img class="savanna-art" src="assets/savanna-watercolor.webp" alt="A watercolor of golden savanna grass, an umbrella-shaped acacia, and a wide, sunlit sky." width="1905" height="825" fetchpriority="high">
-            <svg class="savanna-grass" viewBox="0 0 670 290" aria-hidden="true" focusable="false"><g class="grass-tuft" data-x="31.0" style="transform-origin:31.0px 260.7px" opacity="0.33"><path d="M31.0 260.7 Q30.3 254.0 25.9 245.0"/><path d="M25.9 247.0 l-2 -3 m2 5 l2 -3"/><path d="M31.0 260.7 Q32.3 257.0 41.1 248.0"/><path d="M31.0 260.7 Q31.9 240.4 38.1 231.4"/></g><g class="grass-tuft" data-x="62.5" style="transform-origin:62.5px 256.4px" opacity="0.42"><path d="M62.5 256.4 Q62.6 251.2 63.3 242.2"/><path d="M63.3 244.2 l-2 -3 m2 5 l2 -3"/><path d="M62.5 256.4 Q62.7 246.2 63.9 237.2"/><path d="M62.5 256.4 Q61.8 246.8 56.6 237.8"/></g><g class="grass-tuft" data-x="83.0" style="transform-origin:83.0px 251.0px" opacity="0.33"><path d="M83.0 251.0 Q83.1 238.3 83.9 229.3"/><path d="M83.9 231.3 l-2 -3 m2 5 l2 -3"/><path d="M83.0 251.0 Q84.5 240.0 94.7 231.0"/><path d="M83.0 251.0 Q84.0 247.1 90.9 238.1"/></g><g class="grass-tuft" data-x="110.6" style="transform-origin:110.6px 258.0px" opacity="0.34"><path d="M110.6 258.0 Q111.0 251.7 114.1 242.7"/><path d="M114.1 244.7 l-2 -3 m2 5 l2 -3"/><path d="M110.6 258.0 Q111.9 242.9 121.0 233.9"/><path d="M110.6 258.0 Q110.4 247.4 109.4 238.4"/></g><g class="grass-tuft" data-x="130.4" style="transform-origin:130.4px 256.3px" opacity="0.45"><path d="M130.4 256.3 Q130.3 244.7 129.2 235.7"/><path d="M129.2 237.7 l-2 -3 m2 5 l2 -3"/><path d="M130.4 256.3 Q131.3 251.7 136.7 242.7"/><path d="M130.4 256.3 Q129.8 249.4 125.1 240.4"/></g><g class="grass-tuft" data-x="155.2" style="transform-origin:155.2px 255.9px" opacity="0.46"><path d="M155.2 255.9 Q154.9 249.4 153.1 240.4"/><path d="M153.1 242.4 l-2 -3 m2 5 l2 -3"/><path d="M155.2 255.9 Q154.7 236.9 151.6 227.9"/><path d="M155.2 255.9 Q155.9 233.3 160.1 224.3"/></g><g class="grass-tuft" data-x="184.7" style="transform-origin:184.7px 254.1px" opacity="0.28"><path d="M184.7 254.1 Q185.1 248.3 187.7 239.3"/><path d="M187.7 241.3 l-2 -3 m2 5 l2 -3"/><path d="M184.7 254.1 Q184.0 236.0 179.3 227.0"/><path d="M184.7 254.1 Q184.6 231.5 184.0 222.5"/></g><g class="grass-tuft" data-x="205.4" style="transform-origin:205.4px 262.8px" opacity="0.32"><path d="M205.4 262.8 Q205.9 256.8 209.3 247.8"/><path d="M209.3 249.8 l-2 -3 m2 5 l2 -3"/><path d="M205.4 262.8 Q206.8 252.6 216.0 243.6"/><path d="M205.4 262.8 Q204.9 256.0 201.5 247.0"/></g><g class="grass-tuft" data-x="234.0" style="transform-origin:234.0px 261.1px" opacity="0.37"><path d="M234.0 261.1 Q233.4 250.3 228.7 241.3"/><path d="M228.7 243.3 l-2 -3 m2 5 l2 -3"/><path d="M234.0 261.1 Q234.8 244.4 239.7 235.4"/><path d="M234.0 261.1 Q235.0 245.3 241.0 236.3"/></g><g class="grass-tuft" data-x="263.6" style="transform-origin:263.6px 253.9px" opacity="0.29"><path d="M263.6 253.9 Q264.3 240.0 269.0 231.0"/><path d="M269.0 233.0 l-2 -3 m2 5 l2 -3"/><path d="M263.6 253.9 Q264.3 248.9 269.1 239.9"/><path d="M263.6 253.9 Q263.1 233.9 259.6 224.9"/></g><g class="grass-tuft" data-x="282.7" style="transform-origin:282.7px 251.4px" opacity="0.31"><path d="M282.7 251.4 Q282.8 243.8 282.9 234.8"/><path d="M282.9 236.8 l-2 -3 m2 5 l2 -3"/><path d="M282.7 251.4 Q281.8 230.5 275.6 221.5"/><path d="M282.7 251.4 Q282.5 234.0 280.8 225.0"/></g><g class="grass-tuft" data-x="314.5" style="transform-origin:314.5px 261.4px" opacity="0.26"><path d="M314.5 261.4 Q313.9 250.7 310.4 241.7"/><path d="M310.4 243.7 l-2 -3 m2 5 l2 -3"/><path d="M314.5 261.4 Q314.1 257.6 311.8 248.6"/><path d="M314.5 261.4 Q314.3 252.0 312.8 243.0"/></g><g class="grass-tuft" data-x="331.1" style="transform-origin:331.1px 262.7px" opacity="0.36"><path d="M331.1 262.7 Q332.2 245.0 339.7 236.0"/><path d="M339.7 238.0 l-2 -3 m2 5 l2 -3"/><path d="M331.1 262.7 Q331.2 252.8 332.1 243.8"/><path d="M331.1 262.7 Q330.7 241.0 328.3 232.0"/></g><g class="grass-tuft" data-x="365.0" style="transform-origin:365.0px 251.3px" opacity="0.29"><path d="M365.0 251.3 Q365.7 238.1 370.0 229.1"/><path d="M370.0 231.1 l-2 -3 m2 5 l2 -3"/><path d="M365.0 251.3 Q365.2 229.8 366.3 220.8"/><path d="M365.0 251.3 Q364.3 242.0 359.4 233.0"/></g><g class="grass-tuft" data-x="381.7" style="transform-origin:381.7px 262.2px" opacity="0.36"><path d="M381.7 262.2 Q382.8 248.3 390.6 239.3"/><path d="M390.6 241.3 l-2 -3 m2 5 l2 -3"/><path d="M381.7 262.2 Q380.7 254.3 374.0 245.3"/><path d="M381.7 262.2 Q381.6 244.1 380.7 235.1"/></g><g class="grass-tuft" data-x="408.4" style="transform-origin:408.4px 251.9px" opacity="0.46"><path d="M408.4 251.9 Q408.7 240.3 410.8 231.3"/><path d="M410.8 233.3 l-2 -3 m2 5 l2 -3"/><path d="M408.4 251.9 Q409.5 246.8 417.2 237.8"/><path d="M408.4 251.9 Q409.4 241.7 416.4 232.7"/></g><g class="grass-tuft" data-x="436.4" style="transform-origin:436.4px 257.7px" opacity="0.39"><path d="M436.4 257.7 Q437.1 245.1 441.5 236.1"/><path d="M441.5 238.1 l-2 -3 m2 5 l2 -3"/><path d="M436.4 257.7 Q437.2 250.3 442.8 241.3"/><path d="M436.4 257.7 Q435.9 236.7 432.9 227.7"/></g><g class="grass-tuft" data-x="462.3" style="transform-origin:462.3px 255.0px" opacity="0.39"><path d="M462.3 255.0 Q462.1 246.5 460.5 237.5"/><path d="M460.5 239.5 l-2 -3 m2 5 l2 -3"/><path d="M462.3 255.0 Q461.7 251.7 457.3 242.7"/><path d="M462.3 255.0 Q461.3 235.4 454.6 226.4"/></g><g class="grass-tuft" data-x="486.7" style="transform-origin:486.7px 253.7px" opacity="0.44"><path d="M486.7 253.7 Q486.9 234.5 488.2 225.5"/><path d="M488.2 227.5 l-2 -3 m2 5 l2 -3"/><path d="M486.7 253.7 Q487.2 250.7 490.8 241.7"/><path d="M486.7 253.7 Q487.7 250.5 494.2 241.5"/></g><g class="grass-tuft" data-x="509.4" style="transform-origin:509.4px 251.1px" opacity="0.30"><path d="M509.4 251.1 Q509.5 231.9 510.4 222.9"/><path d="M510.4 224.9 l-2 -3 m2 5 l2 -3"/><path d="M509.4 251.1 Q510.7 244.9 519.7 235.9"/><path d="M509.4 251.1 Q510.5 243.2 517.8 234.2"/></g><g class="grass-tuft" data-x="538.4" style="transform-origin:538.4px 256.4px" opacity="0.34"><path d="M538.4 256.4 Q537.8 241.2 533.7 232.2"/><path d="M533.7 234.2 l-2 -3 m2 5 l2 -3"/><path d="M538.4 256.4 Q537.9 239.8 534.3 230.8"/><path d="M538.4 256.4 Q539.3 252.2 544.8 243.2"/></g><g class="grass-tuft" data-x="558.0" style="transform-origin:558.0px 255.1px" opacity="0.31"><path d="M558.0 255.1 Q559.1 241.9 566.2 232.9"/><path d="M566.2 234.9 l-2 -3 m2 5 l2 -3"/><path d="M558.0 255.1 Q558.5 246.8 561.6 237.8"/><path d="M558.0 255.1 Q558.6 245.8 562.4 236.8"/></g><g class="grass-tuft" data-x="591.2" style="transform-origin:591.2px 254.3px" opacity="0.44"><path d="M591.2 254.3 Q590.9 234.1 589.1 225.1"/><path d="M589.1 227.1 l-2 -3 m2 5 l2 -3"/><path d="M591.2 254.3 Q591.8 245.0 595.9 236.0"/><path d="M591.2 254.3 Q592.5 245.4 600.9 236.4"/></g><g class="grass-tuft" data-x="612.5" style="transform-origin:612.5px 257.4px" opacity="0.42"><path d="M612.5 257.4 Q613.2 247.7 617.9 238.7"/><path d="M617.9 240.7 l-2 -3 m2 5 l2 -3"/><path d="M612.5 257.4 Q613.5 247.6 620.6 238.6"/><path d="M612.5 257.4 Q612.7 245.3 614.1 236.3"/></g></svg>
+      <aside class="hero-aside reveal" aria-label="Signature">
+        <div class="signature-card">
+          <img class="signature" src="assets/signature.png" alt="Handwritten signature of Xiangcheng Zhan" width="1254" height="1254">
+          <div class="signature-meta">
+            <div><b>Currently</b>Post-deployment learning for world-action models</div>
+            <img src="assets/profile-avatar.png" alt="Z monogram" width="500" height="500">
           </div>
-          <figcaption class="savanna-caption">
-            <blockquote cite="https://poets.org/poem/song-open-road-1"><h2 id="about-title">Healthy, free,<br>the world before me<span class="quote-comma">,</span></h2><p><span>Walt Whitman</span><span aria-hidden="true"> · </span><cite><a href="https://poets.org/poem/song-open-road-1">Song of the Open Road</a></cite></p></blockquote>
-            <button class="savanna-breeze" type="button" hidden aria-label="Let the grass sway in the wind"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h12a3 3 0 1 0-3-3M3 12h16a2 2 0 1 1-2 2M6 16h4a2.5 2.5 0 1 1-2.5 2.5"/></svg><span>Breeze</span></button>
-          </figcaption>
-        </figure>
-        <p class="intro-copy">I’m a <strong>Ph.D. student in Computer Science</strong> at Harbin Institute of Technology, Shenzhen, working on <strong>embodied intelligence</strong> and <strong>multimodal large language models</strong>.</p>
-        <p class="intro-copy">I’m interested in how models understand the world—and how that understanding evolves through interaction.</p>
-      </section>
+        </div>
+        <div class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><defs><path id="ring" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs><text><textPath href="#ring" startOffset="0">Embodied · Multimodal · World models ·</textPath></text></svg>
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="8" fill="currentColor" opacity=".85"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M50 32v-5M50 73v-5M32 50h-5M73 50h-5M37.3 37.3l-3.5-3.5M66.2 66.2l-3.5-3.5M37.3 62.7l-3.5 3.5M66.2 33.8l-3.5 3.5"/></g></svg>
+        </div>
+      </aside>
+    </section>
 
-      <section class="experience" id="experience" aria-labelledby="experience-title">
-        <header class="section-header"><p class="section-label"><span aria-hidden="true">02</span> Experience</p><h2 id="experience-title">Education</h2></header>
-        <ol class="education-list">
-          <li class="education-entry"><span class="school-code" aria-hidden="true">HITSZ</span><div><div class="education-heading"><h3>Harbin Institute of Technology, Shenzhen</h3><span class="education-period">2025 – Present</span></div><p>Ph.D. in Computer Science · In progress</p></div></li>
-          <li class="education-entry"><span class="school-code" aria-hidden="true">HKU</span><div><div class="education-heading"><h3>The University of Hong Kong</h3><span class="education-period">2023 – 2025</span></div><p>Master’s in Artificial Intelligence</p></div></li>
-          <li class="education-entry"><span class="school-code" aria-hidden="true">SYSU</span><div><div class="education-heading"><h3>Sun Yat-sen University</h3><span class="education-period">2019 – 2023</span></div><p>Bachelor’s in Mathematics and Applied Mathematics</p></div></li>
-        </ol>
-      </section>
+    <figure class="wrap panorama reveal" aria-label="Watercolor of a savanna with a line from Walt Whitman">
+      <div class="savanna-scene">
+        <img class="savanna-art" src="assets/savanna-watercolor.webp" alt="A watercolor of golden savanna grass, an umbrella-shaped acacia, and a wide, sunlit sky." width="1905" height="825" fetchpriority="high">
+        <svg class="savanna-grass" viewBox="0 0 670 290" aria-hidden="true" focusable="false"><g class="grass-tuft" data-x="31.0" style="transform-origin:31.0px 260.7px" opacity="0.33"><path d="M31.0 260.7 Q30.3 254.0 25.9 245.0"/><path d="M25.9 247.0 l-2 -3 m2 5 l2 -3"/><path d="M31.0 260.7 Q32.3 257.0 41.1 248.0"/><path d="M31.0 260.7 Q31.9 240.4 38.1 231.4"/></g><g class="grass-tuft" data-x="62.5" style="transform-origin:62.5px 256.4px" opacity="0.42"><path d="M62.5 256.4 Q62.6 251.2 63.3 242.2"/><path d="M63.3 244.2 l-2 -3 m2 5 l2 -3"/><path d="M62.5 256.4 Q62.7 246.2 63.9 237.2"/><path d="M62.5 256.4 Q61.8 246.8 56.6 237.8"/></g><g class="grass-tuft" data-x="83.0" style="transform-origin:83.0px 251.0px" opacity="0.33"><path d="M83.0 251.0 Q83.1 238.3 83.9 229.3"/><path d="M83.9 231.3 l-2 -3 m2 5 l2 -3"/><path d="M83.0 251.0 Q84.5 240.0 94.7 231.0"/><path d="M83.0 251.0 Q84.0 247.1 90.9 238.1"/></g><g class="grass-tuft" data-x="110.6" style="transform-origin:110.6px 258.0px" opacity="0.34"><path d="M110.6 258.0 Q111.0 251.7 114.1 242.7"/><path d="M114.1 244.7 l-2 -3 m2 5 l2 -3"/><path d="M110.6 258.0 Q111.9 242.9 121.0 233.9"/><path d="M110.6 258.0 Q110.4 247.4 109.4 238.4"/></g><g class="grass-tuft" data-x="130.4" style="transform-origin:130.4px 256.3px" opacity="0.45"><path d="M130.4 256.3 Q130.3 244.7 129.2 235.7"/><path d="M129.2 237.7 l-2 -3 m2 5 l2 -3"/><path d="M130.4 256.3 Q131.3 251.7 136.7 242.7"/><path d="M130.4 256.3 Q129.8 249.4 125.1 240.4"/></g><g class="grass-tuft" data-x="155.2" style="transform-origin:155.2px 255.9px" opacity="0.46"><path d="M155.2 255.9 Q154.9 249.4 153.1 240.4"/><path d="M153.1 242.4 l-2 -3 m2 5 l2 -3"/><path d="M155.2 255.9 Q154.7 236.9 151.6 227.9"/><path d="M155.2 255.9 Q155.9 233.3 160.1 224.3"/></g><g class="grass-tuft" data-x="184.7" style="transform-origin:184.7px 254.1px" opacity="0.28"><path d="M184.7 254.1 Q185.1 248.3 187.7 239.3"/><path d="M187.7 241.3 l-2 -3 m2 5 l2 -3"/><path d="M184.7 254.1 Q184.0 236.0 179.3 227.0"/><path d="M184.7 254.1 Q184.6 231.5 184.0 222.5"/></g><g class="grass-tuft" data-x="205.4" style="transform-origin:205.4px 262.8px" opacity="0.32"><path d="M205.4 262.8 Q205.9 256.8 209.3 247.8"/><path d="M209.3 249.8 l-2 -3 m2 5 l2 -3"/><path d="M205.4 262.8 Q206.8 252.6 216.0 243.6"/><path d="M205.4 262.8 Q204.9 256.0 201.5 247.0"/></g><g class="grass-tuft" data-x="234.0" style="transform-origin:234.0px 261.1px" opacity="0.37"><path d="M234.0 261.1 Q233.4 250.3 228.7 241.3"/><path d="M228.7 243.3 l-2 -3 m2 5 l2 -3"/><path d="M234.0 261.1 Q234.8 244.4 239.7 235.4"/><path d="M234.0 261.1 Q235.0 245.3 241.0 236.3"/></g><g class="grass-tuft" data-x="263.6" style="transform-origin:263.6px 253.9px" opacity="0.29"><path d="M263.6 253.9 Q264.3 240.0 269.0 231.0"/><path d="M269.0 233.0 l-2 -3 m2 5 l2 -3"/><path d="M263.6 253.9 Q264.3 248.9 269.1 239.9"/><path d="M263.6 253.9 Q263.1 233.9 259.6 224.9"/></g><g class="grass-tuft" data-x="282.7" style="transform-origin:282.7px 251.4px" opacity="0.31"><path d="M282.7 251.4 Q282.8 243.8 282.9 234.8"/><path d="M282.9 236.8 l-2 -3 m2 5 l2 -3"/><path d="M282.7 251.4 Q281.8 230.5 275.6 221.5"/><path d="M282.7 251.4 Q282.5 234.0 280.8 225.0"/></g><g class="grass-tuft" data-x="314.5" style="transform-origin:314.5px 261.4px" opacity="0.26"><path d="M314.5 261.4 Q313.9 250.7 310.4 241.7"/><path d="M310.4 243.7 l-2 -3 m2 5 l2 -3"/><path d="M314.5 261.4 Q314.1 257.6 311.8 248.6"/><path d="M314.5 261.4 Q314.3 252.0 312.8 243.0"/></g><g class="grass-tuft" data-x="331.1" style="transform-origin:331.1px 262.7px" opacity="0.36"><path d="M331.1 262.7 Q332.2 245.0 339.7 236.0"/><path d="M339.7 238.0 l-2 -3 m2 5 l2 -3"/><path d="M331.1 262.7 Q331.2 252.8 332.1 243.8"/><path d="M331.1 262.7 Q330.7 241.0 328.3 232.0"/></g><g class="grass-tuft" data-x="365.0" style="transform-origin:365.0px 251.3px" opacity="0.29"><path d="M365.0 251.3 Q365.7 238.1 370.0 229.1"/><path d="M370.0 231.1 l-2 -3 m2 5 l2 -3"/><path d="M365.0 251.3 Q365.2 229.8 366.3 220.8"/><path d="M365.0 251.3 Q364.3 242.0 359.4 233.0"/></g><g class="grass-tuft" data-x="381.7" style="transform-origin:381.7px 262.2px" opacity="0.36"><path d="M381.7 262.2 Q382.8 248.3 390.6 239.3"/><path d="M390.6 241.3 l-2 -3 m2 5 l2 -3"/><path d="M381.7 262.2 Q380.7 254.3 374.0 245.3"/><path d="M381.7 262.2 Q381.6 244.1 380.7 235.1"/></g><g class="grass-tuft" data-x="408.4" style="transform-origin:408.4px 251.9px" opacity="0.46"><path d="M408.4 251.9 Q408.7 240.3 410.8 231.3"/><path d="M410.8 233.3 l-2 -3 m2 5 l2 -3"/><path d="M408.4 251.9 Q409.5 246.8 417.2 237.8"/><path d="M408.4 251.9 Q409.4 241.7 416.4 232.7"/></g><g class="grass-tuft" data-x="436.4" style="transform-origin:436.4px 257.7px" opacity="0.39"><path d="M436.4 257.7 Q437.1 245.1 441.5 236.1"/><path d="M441.5 238.1 l-2 -3 m2 5 l2 -3"/><path d="M436.4 257.7 Q437.2 250.3 442.8 241.3"/><path d="M436.4 257.7 Q435.9 236.7 432.9 227.7"/></g><g class="grass-tuft" data-x="462.3" style="transform-origin:462.3px 255.0px" opacity="0.39"><path d="M462.3 255.0 Q462.1 246.5 460.5 237.5"/><path d="M460.5 239.5 l-2 -3 m2 5 l2 -3"/><path d="M462.3 255.0 Q461.7 251.7 457.3 242.7"/><path d="M462.3 255.0 Q461.3 235.4 454.6 226.4"/></g><g class="grass-tuft" data-x="486.7" style="transform-origin:486.7px 253.7px" opacity="0.44"><path d="M486.7 253.7 Q486.9 234.5 488.2 225.5"/><path d="M488.2 227.5 l-2 -3 m2 5 l2 -3"/><path d="M486.7 253.7 Q487.2 250.7 490.8 241.7"/><path d="M486.7 253.7 Q487.7 250.5 494.2 241.5"/></g><g class="grass-tuft" data-x="509.4" style="transform-origin:509.4px 251.1px" opacity="0.30"><path d="M509.4 251.1 Q509.5 231.9 510.4 222.9"/><path d="M510.4 224.9 l-2 -3 m2 5 l2 -3"/><path d="M509.4 251.1 Q510.7 244.9 519.7 235.9"/><path d="M509.4 251.1 Q510.5 243.2 517.8 234.2"/></g><g class="grass-tuft" data-x="538.4" style="transform-origin:538.4px 256.4px" opacity="0.34"><path d="M538.4 256.4 Q537.8 241.2 533.7 232.2"/><path d="M533.7 234.2 l-2 -3 m2 5 l2 -3"/><path d="M538.4 256.4 Q537.9 239.8 534.3 230.8"/><path d="M538.4 256.4 Q539.3 252.2 544.8 243.2"/></g><g class="grass-tuft" data-x="558.0" style="transform-origin:558.0px 255.1px" opacity="0.31"><path d="M558.0 255.1 Q559.1 241.9 566.2 232.9"/><path d="M566.2 234.9 l-2 -3 m2 5 l2 -3"/><path d="M558.0 255.1 Q558.5 246.8 561.6 237.8"/><path d="M558.0 255.1 Q558.6 245.8 562.4 236.8"/></g><g class="grass-tuft" data-x="591.2" style="transform-origin:591.2px 254.3px" opacity="0.44"><path d="M591.2 254.3 Q590.9 234.1 589.1 225.1"/><path d="M589.1 227.1 l-2 -3 m2 5 l2 -3"/><path d="M591.2 254.3 Q591.8 245.0 595.9 236.0"/><path d="M591.2 254.3 Q592.5 245.4 600.9 236.4"/></g><g class="grass-tuft" data-x="612.5" style="transform-origin:612.5px 257.4px" opacity="0.42"><path d="M612.5 257.4 Q613.2 247.7 617.9 238.7"/><path d="M617.9 240.7 l-2 -3 m2 5 l2 -3"/><path d="M612.5 257.4 Q613.5 247.6 620.6 238.6"/><path d="M612.5 257.4 Q612.7 245.3 614.1 236.3"/></g></svg>
+      </div>
+      <figcaption class="panorama-caption">
+        <blockquote cite="https://poets.org/poem/song-open-road-1">
+          <p class="verse">Healthy, free, the world before me<span class="quote-comma">,</span></p>
+          <p class="source">Walt Whitman · <cite><a href="https://poets.org/poem/song-open-road-1">Song of the Open Road</a></cite></p>
+        </blockquote>
+        <button class="savanna-breeze" type="button" hidden aria-label="Let the grass sway in the wind"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h12a3 3 0 1 0-3-3M3 12h16a2 2 0 1 1-2 2M6 16h4a2.5 2.5 0 1 1-2.5 2.5"/></svg>Breeze</button>
+      </figcaption>
+    </figure>
 
-      <section class="research" id="research" aria-labelledby="research-title">
-        <header class="section-header"><p class="section-label"><span aria-hidden="true">03</span> Research</p><h2 id="research-title">Selected research</h2></header>
-        <article class="publication paper-dewo" aria-labelledby="dewo-title">
-          <div class="paper-topline"><span class="paper-shorthand">DEWO</span><span class="paper-venue">ICLR 2027 <span class="separator">/</span> <span class="under-review">Under review</span></span></div>
-          <h3 id="dewo-title">Direct Experience World-Model Optimization: Learning the World Beyond Action Imitation</h3>
-          <p class="authors"><strong>Xiangcheng Zhan</strong>, Zirui Chen, Yicheng Zhao, Ziteng Gao, Shuo Yang</p>
-          <p class="paper-summary">Learning from successful and failed visual futures to refine world representations and improve dexterous manipulation after deployment.</p>
-          <p class="paper-topic">World-action models <span aria-hidden="true">·</span> Dexterous manipulation</p>
+    <section class="wrap section" id="interests" aria-labelledby="interests-title">
+      <header class="section-head reveal">
+        <div><p class="kicker">01 — Interests</p><h2 id="interests-title">What I think about</h2></div>
+        <p>Three threads, one question: what does a model need to know about the world to act in it well?</p>
+      </header>
+      <div class="themes">
+        <article class="theme reveal">
+          <span class="theme-num">i.</span>
+          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="17"/><path d="M15 32h34M32 15c-6 5-6 29 0 34M32 15c6 5 6 29 0 34"/><path class="accent" d="M8 24a26 26 0 0 1 44-11"/><path class="accent" d="m52 7 .3 6.4L46 14"/><path class="accent" d="M56 40a26 26 0 0 1-44 11"/><path class="accent" d="m12 57-.3-6.4L18 50"/></svg>
+          <h3>World-action models</h3>
+          <p>Models that couple visual prediction with action, and keep refining their picture of the world from experience after deployment.</p>
         </article>
-        <article class="publication paper-rot" aria-labelledby="rot-title">
-          <div class="paper-topline"><span class="paper-shorthand">ROT</span><span class="paper-venue">EMNLP 2026 <span class="separator">/</span> <span class="oral">Oral</span></span></div>
-          <h3 id="rot-title">ROT: Rotating Hidden States towards Contextual Vectors for Hallucination Mitigation in LVLMs</h3>
-          <p class="authors">Yijing Du, <strong>Xiangcheng Zhan</strong>, Shuo Yang</p>
-          <p class="paper-summary">Mitigating hallucinations in large vision–language models by rotating hidden states towards contextual vectors.</p>
-          <p class="paper-topic">Vision–language models <span aria-hidden="true">·</span> Hallucination mitigation</p>
+        <article class="theme reveal">
+          <span class="theme-num">ii.</span>
+          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6v12"/><rect x="22" y="18" width="20" height="8" rx="2"/><path d="M24 26v10l-4 10M40 26v10l4 10"/><rect class="accent" x="25" y="41" width="14" height="14" rx="2" transform="rotate(-8 32 48)"/><path d="M10 58h44"/></svg>
+          <h3>Dexterous manipulation</h3>
+          <p>Control in high-dimensional action spaces, where small errors compound and policies must adapt beyond their demonstrations.</p>
         </article>
-      </section>
+        <article class="theme reveal">
+          <span class="theme-num">iii.</span>
+          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="12" width="30" height="24" rx="3"/><path d="m10 32 8-9 6 6 4-4 6 7"/><circle class="accent" cx="28" cy="19" r="2.5"/><path d="M42 30h16M42 37h12M42 44h16M28 50h22"/><path class="accent" d="M21 40v6a4 4 0 0 0 4 4h1"/></svg>
+          <h3>Grounded multimodal LLMs</h3>
+          <p>Keeping the internal states of vision–language models faithful to what they actually see, so they say less that isn’t there.</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="earlier" id="earlier" aria-labelledby="earlier-title">
-        <header class="section-header"><p class="section-label"><span aria-hidden="true">04</span> Earlier work</p><h2 id="earlier-title">Applied deep learning</h2></header>
-        <article class="publication earlier-paper" aria-labelledby="plaque-title">
-          <div class="paper-topline"><span class="paper-shorthand">3D VISION</span><span class="paper-venue">2025 <span class="separator">/</span> Conference contribution</span></div>
-          <h3 id="plaque-title"><a href="https://hub.hku.hk/handle/10722/359253">Deep Learning for Automated Visualization and Measurement of Dental Plaque Using 3D Intraoral Scanning—A Cross-Sectional Study</a></h3>
-          <p class="authors">Jonathan Hok Kan Yeung, <strong>Xiangcheng Zhan</strong>, Tingting Lin, Liangqiong Qu, Melissa Fok, Ke Deng</p>
-          <p class="journal"><em>Journal of Clinical Periodontology</em>, 52 (Supplement 28)</p>
-          <div class="paper-links"><a href="https://hub.hku.hk/handle/10722/359253">Publication record <span aria-hidden="true">↗</span></a><a href="https://doi.org/10.1111/jcpe.14158">DOI <span aria-hidden="true">↗</span></a></div>
+    <section class="wrap section" id="research" aria-labelledby="research-title">
+      <header class="section-head reveal">
+        <div><p class="kicker">02 — Research</p><h2 id="research-title">Selected publications</h2></div>
+        <p>Two current papers and one earlier applied study. Sketches are schematic, not figures from the papers.</p>
+      </header>
+
+      <div class="pubs">
+        <article class="pub reveal" aria-labelledby="dewo-title">
+          <figure class="pub-figure">
+            <span class="tag">DEWO</span>
+            <svg viewBox="0 0 400 300" role="img" aria-label="Sketch: one observation branching into successful and failed imagined futures, both fed back to refine the world model">
+              <rect class="fig-paper" x="34" y="122" width="58" height="46" rx="6"/>
+              <text class="fig-text" x="63" y="149" text-anchor="middle">o_t</text>
+              <path class="fig-line" d="M92 145h38"/>
+              <circle class="fig-paper" cx="160" cy="145" r="28"/>
+              <circle class="fig-fill" cx="160" cy="145" r="5"/>
+              <text class="fig-text" x="160" y="106" text-anchor="middle">WAM</text>
+              <path class="fig-line" d="M188 138c40-10 60-58 112-62"/>
+              <path class="fig-line" d="M188 142c40-4 64-20 112-22"/>
+              <path class="fig-soft" d="M188 150c40 4 64 20 112 22"/>
+              <path class="fig-soft" d="M188 154c40 10 60 58 112 62"/>
+              <g><rect class="fig-paper" x="302" y="62" width="44" height="30" rx="5"/><path class="fig-line" d="m315 77 5 5 11-10"/></g>
+              <g><rect class="fig-paper" x="302" y="106" width="44" height="30" rx="5"/><path class="fig-line" d="m315 121 5 5 11-10"/></g>
+              <g><rect class="fig-paper" x="302" y="158" width="44" height="30" rx="5" stroke-dasharray="3 3"/><path class="fig-soft" d="m318 167 12 12m0-12-12 12" stroke-dasharray="0"/></g>
+              <g><rect class="fig-paper" x="302" y="202" width="44" height="30" rx="5" stroke-dasharray="3 3"/><path class="fig-soft" d="m318 211 12 12m0-12-12 12" stroke-dasharray="0"/></g>
+              <path class="fig-ochre" d="M362 148c22 0 18 108-60 112-70 4-128-20-142-78"/>
+              <path class="fig-ochre" d="m154 190 6-8 6 8"/>
+              <text class="fig-text" x="250" y="276" text-anchor="middle" style="fill:var(--ochre)">experience</text>
+              <text class="fig-text" x="324" y="48" text-anchor="middle">futures</text>
+            </svg>
+          </figure>
+          <div class="pub-body">
+            <div class="pub-meta"><span class="badge badge-venue">ICLR 2027</span><span class="badge badge-review">Under review</span></div>
+            <h3 id="dewo-title"><a href="https://arxiv.org/abs/2609.37398">Direct Experience World-Model Optimization: Learning the World Beyond Action Imitation</a></h3>
+            <p class="authors"><strong>Xiangcheng Zhan</strong>, Zirui Chen, Yicheng Zhao, Ziteng Gao, Shuo Yang</p>
+            <p class="pub-summary">A post-deployment approach for world-action models: learn from both successful and failed visual futures, not just imitated actions, to refine world representations for dexterous manipulation.</p>
+            <div class="pub-foot">
+              <ul class="topics"><li>World-action models</li><li>Dexterous manipulation</li></ul>
+              <div class="pub-links"><a class="link" href="https://arxiv.org/abs/2609.37398">arXiv ↗</a><a class="link" href="https://arxiv.org/pdf/2609.37398">PDF ↗</a></div>
+            </div>
+          </div>
         </article>
-      </section>
-      <footer class="site-footer"><span>© 2026 Xiangcheng Zhan</span><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
-    </main>
-  </div>
+
+        <article class="pub reveal" aria-labelledby="rot-title">
+          <figure class="pub-figure">
+            <span class="tag">ROT</span>
+            <svg viewBox="0 0 400 300" role="img" aria-label="Sketch: a hidden-state vector rotated towards a contextual vector">
+              <circle cx="130" cy="220" r="150" fill="none" stroke="#e1dac9" stroke-width="1"/>
+              <circle cx="130" cy="220" r="100" fill="none" stroke="#e8e2d3" stroke-width="1"/>
+              <path d="M130 220h230M130 220V40" stroke="#d6cfbd" stroke-width="1"/>
+              <path class="fig-soft" d="M130 220 268 162"/>
+              <circle cx="268" cy="162" r="3.5" fill="#b9b6a5"/>
+              <path class="fig-ochre" d="M130 220 200 82"/>
+              <path class="fig-ochre" d="m192 88 8-6 1 10"/>
+              <path class="fig-line" d="M130 220 232 108" stroke-width="2"/>
+              <circle class="fig-fill" cx="232" cy="108" r="4.5"/>
+              <path class="fig-line" d="M222 177a100 100 0 0 0-23-41" stroke-dasharray="0" />
+              <path class="fig-line" d="m196 141 3-6 6 3"/>
+              <text class="fig-serif" x="278" y="166">h</text>
+              <text class="fig-serif" x="243" y="104">h′</text>
+              <text class="fig-serif" x="190" y="68" style="fill:var(--ochre)">c</text>
+              <text class="fig-text" x="238" y="190">rotate</text>
+              <circle cx="130" cy="220" r="3" fill="#8f8b7a"/>
+            </svg>
+          </figure>
+          <div class="pub-body">
+            <div class="pub-meta"><span class="badge badge-venue">EMNLP 2026</span><span class="badge badge-oral">Oral</span></div>
+            <h3 id="rot-title"><a href="https://aclanthology.org/2026.emnlp-main.1442/">ROT: Rotating Hidden States towards Contextual Vectors for Hallucination Mitigation in LVLMs</a></h3>
+            <p class="authors">Yijing Du, <strong>Xiangcheng Zhan</strong>, Shuo Yang</p>
+            <p class="pub-summary">A training-free method that mitigates hallucinations in large vision–language models by rotating internal hidden states towards contextual vectors.</p>
+            <div class="pub-foot">
+              <ul class="topics"><li>Vision–language models</li><li>Hallucination mitigation</li></ul>
+              <div class="pub-links"><a class="link" href="https://aclanthology.org/2026.emnlp-main.1442/">Paper ↗</a><a class="link" href="https://aclanthology.org/2026.emnlp-main.1442.pdf">PDF ↗</a><a class="link" href="https://arxiv.org/abs/2610.06056">arXiv ↗</a><a class="link" href="https://github.com/Rooselyn/ROT">Code ↗</a></div>
+            </div>
+          </div>
+        </article>
+
+        <p class="subhead reveal">Earlier · applied deep learning</p>
+
+        <article class="pub reveal" aria-labelledby="plaque-title">
+          <figure class="pub-figure">
+            <span class="tag">3D VISION</span>
+            <svg viewBox="0 0 400 300" role="img" aria-label="Sketch: a tooth crown with contour lines and highlighted plaque regions">
+              <g transform="translate(40 8) scale(.8)"><path class="fig-line" d="M128 92c18-22 46-22 72-10 26-12 54-12 72 10 22 28 14 74-4 104-12 20-16 48-26 66-8 14-20 8-22-6-4-24-8-44-20-44s-16 20-20 44c-2 14-14 20-22 6-10-18-14-46-26-66-18-30-26-76-4-104Z"/>
+              <path class="fig-soft" d="M144 104c14-14 36-14 56-4 20-10 42-10 56 4 14 18 10 48-2 68" stroke-dasharray="2 4"/>
+              <path class="fig-soft" d="M160 118c12-8 26-8 40-2 14-6 28-6 40 2 8 12 6 30-2 44" stroke-dasharray="2 4"/>
+              <g class="fig-ochre-fill"><circle cx="152" cy="168" r="4" opacity=".9"/><circle cx="164" cy="178" r="3" opacity=".7"/><circle cx="146" cy="184" r="2.5" opacity=".55"/><circle cx="158" cy="192" r="3.5" opacity=".8"/><circle cx="244" cy="160" r="3" opacity=".7"/><circle cx="254" cy="172" r="4" opacity=".9"/><circle cx="240" cy="178" r="2.5" opacity=".5"/><circle cx="206" cy="128" r="2.5" opacity=".45"/></g>
+              <path class="fig-ochre" d="M262 172h52" stroke-dasharray="1 0"/></g>
+              <text class="fig-text" x="295" y="149">plaque</text>
+              <path d="M70 250h260" stroke="#d6cfbd"/>
+              <path d="M70 246v8M330 246v8" stroke="#d6cfbd"/>
+              <text class="fig-text" x="200" y="270" text-anchor="middle">3D intraoral scan</text>
+            </svg>
+          </figure>
+          <div class="pub-body">
+            <div class="pub-meta"><span class="badge badge-plain">J. Clin. Periodontol. 2025</span><span class="badge badge-plain">Conference contribution</span></div>
+            <h3 id="plaque-title"><a href="https://hub.hku.hk/handle/10722/359253">Deep Learning for Automated Visualization and Measurement of Dental Plaque Using 3D Intraoral Scanning—A Cross-Sectional Study</a></h3>
+            <p class="authors">Jonathan Hok Kan Yeung, <strong>Xiangcheng Zhan</strong>, Tingting Lin, Liangqiong Qu, Melissa Fok, Ke Deng</p>
+            <p class="journal"><em>Journal of Clinical Periodontology</em>, 52 (Supplement 28)</p>
+            <p class="pub-summary">Applying deep learning to 3D intraoral scans to visualize and measure dental plaque automatically.</p>
+            <div class="pub-foot">
+              <ul class="topics"><li>3D vision</li><li>Medical imaging</li></ul>
+              <div class="pub-links"><a class="link" href="https://hub.hku.hk/handle/10722/359253">Record ↗</a><a class="link" href="https://doi.org/10.1111/jcpe.14158">DOI ↗</a></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="education" aria-labelledby="education-title">
+      <header class="section-head reveal">
+        <div><p class="kicker">03 — Education</p><h2 id="education-title">From mathematics to machines that act</h2></div>
+        <p>Applied mathematics, then artificial intelligence, now embodied intelligence.</p>
+      </header>
+      <ol class="timeline">
+        <li class="stop reveal">
+          <span class="stop-years">2019 — 2023</span>
+          <span class="stop-code">SYSU</span>
+          <h3>Sun Yat-sen University</h3>
+          <p>B.Sc. in Mathematics and Applied Mathematics</p>
+        </li>
+        <li class="stop reveal">
+          <span class="stop-years">2023 — 2025</span>
+          <span class="stop-code">HKU</span>
+          <h3>The University of Hong Kong</h3>
+          <p>Master’s in Artificial Intelligence</p>
+        </li>
+        <li class="stop is-now reveal">
+          <span class="stop-years">2025 — Present</span>
+          <span class="stop-code">HITSZ</span>
+          <h3>Harbin Institute of Technology, Shenzhen <span class="now-pill">Now</span></h3>
+          <p>Ph.D. in Computer Science</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="closing">
+    <div class="wrap">
+      <div class="closing-grid">
+        <div>
+          <p class="kicker">Contact</p>
+          <h2>Happy to talk about world models, robots, or open roads — <a href="mailto:zhanxch@foxmail.com">zhanxch@foxmail.com</a></h2>
+        </div>
+        <img class="closing-sig" src="assets/signature.png" alt="" width="1254" height="1254" loading="lazy">
+      </div>
+      <div class="closing-bar">
+        <span>© 2026 Xiangcheng Zhan · Shenzhen</span>
+        <nav aria-label="Footer"><a href="https://github.com/zhanxch">GitHub</a><a href="mailto:zhanxch@foxmail.com">Email</a><a href="#about">Back to top ↑</a></nav>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
