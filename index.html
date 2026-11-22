@@ -32,6 +32,7 @@
         <a href="#about" aria-current="location">About</a>
         <a href="#interests">Interests</a>
         <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a class="nav-cta" href="mailto:zhanxch@foxmail.com">Say hello</a>
       </nav>
@@ -217,9 +218,60 @@
       </div>
     </section>
 
+    <section class="wrap section" id="projects" aria-labelledby="projects-title">
+      <header class="section-head reveal">
+        <div><p class="kicker">03 — Projects</p><h2 id="projects-title">Open questions, open code</h2></div>
+        <p>Research prototypes and tools that are not papers. Each repository describes its own scope and evidence.</p>
+      </header>
+
+      <div class="upcoming reveal">
+        <span class="upcoming-dot" aria-hidden="true"></span>
+        <span class="upcoming-label">Coming soon</span>
+        <strong>RoboUse-RSI</strong>
+        <span class="upcoming-note">In preparation. Details soon.</span>
+      </div>
+
+      <div class="projects">
+        <article class="project project-featured reveal" aria-labelledby="linkmind-title">
+          <div class="project-top"><span class="project-kind">Research question · Studio</span><a class="project-repo" href="https://github.com/zhanxch/LinkMind" aria-label="LinkMind on GitHub">GitHub ↗</a></div>
+          <h3 id="linkmind-title"><a href="https://github.com/zhanxch/LinkMind">LinkMind</a></h3>
+          <p class="project-lede">Embodied Infrastructure Half-Life</p>
+          <p>Agent infrastructure encodes assumptions about what a model cannot yet do. As models improve, which tools, skills, and harnesses should an embodied agent keep, revise, or drop? I measure the gain a fixed support configuration adds over the same model’s basic robot interface, and ask when that gain falls to half.</p>
+          <p>LinkMind Studio makes this concrete: procedures link back to the source demonstrations an agent can inspect, adapt to the current scene, and check against live robot feedback.</p>
+          <figure class="halflife" aria-label="Schematic: the gain from fixed support declines across model generations until it reaches half">
+            <svg viewBox="0 0 420 150" aria-hidden="true">
+              <path d="M40 18v104h360" stroke="#d6cfbd" fill="none"/>
+              <path class="fig-soft" d="M40 74h360"/>
+              <path class="fig-line" d="M40 26C120 34 170 54 220 74s110 32 170 38" stroke-width="1.8"/>
+              <circle class="fig-ochre-fill" cx="220" cy="74" r="5"/>
+              <path class="fig-ochre" d="M220 74v48" stroke-dasharray="2 3"/>
+              <circle class="fig-fill" cx="40" cy="26" r="3.5"/>
+              <text class="fig-text" x="46" y="16">gain over basic interface</text>
+              <text class="fig-text" x="400" y="138" text-anchor="end">model generations →</text>
+              <text class="fig-text" x="228" y="66" style="fill:var(--ochre)">½ · half-life</text>
+            </svg>
+          </figure>
+        </article>
+
+        <article class="project reveal" aria-labelledby="roborag-title">
+          <div class="project-top"><span class="project-kind">Research prototype</span><a class="project-repo" href="https://github.com/zhanxch/RoboRAG" aria-label="RoboRAG on GitHub">GitHub ↗</a></div>
+          <h3 id="roborag-title"><a href="https://github.com/zhanxch/RoboRAG">RoboRAG</a></h3>
+          <p>Retrieval-augmented in-context learning for robot control. A read-only long-term library of demonstrations sits beside an episode-local memory that grows as the robot acts. The question: under a fixed context budget, does retrieving from both help adaptation and recovery?</p>
+          <ul class="topics"><li>In-context learning</li><li>Retrieval</li><li>Robot memory</li></ul>
+        </article>
+
+        <article class="project reveal" aria-labelledby="dsh-title">
+          <div class="project-top"><span class="project-kind">Open-source tool</span><a class="project-repo" href="https://github.com/zhanxch/dsh-robotics" aria-label="dsh-robotics on GitHub">GitHub ↗</a></div>
+          <h3 id="dsh-title"><a href="https://github.com/zhanxch/dsh-robotics">dsh-robotics</a></h3>
+          <p>A community plugin that brings the workflows of Google DeepMind’s Antigravity Robotics plugin to DeepSeek Harness: a live MuJoCo Studio beside the conversation, with simulation snapshots attached to the next message.</p>
+          <ul class="topics"><li>MuJoCo</li><li>Coding agents</li><li>Apache-2.0</li></ul>
+        </article>
+      </div>
+    </section>
+
     <section class="wrap section" id="education" aria-labelledby="education-title">
       <header class="section-head reveal">
-        <div><p class="kicker">03 — Education</p><h2 id="education-title">From mathematics to machines that act</h2></div>
+        <div><p class="kicker">04 — Education</p><h2 id="education-title">From mathematics to machines that act</h2></div>
         <p>Applied mathematics, then artificial intelligence, now embodied intelligence.</p>
       </header>
       <ol class="timeline">
