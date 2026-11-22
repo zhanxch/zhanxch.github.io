@@ -30,7 +30,7 @@
       </a>
       <nav class="nav" aria-label="Main navigation">
         <a href="#about" aria-current="location">About</a>
-        <a href="#interests">Interests</a>
+        <a href="#interests">Questions</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
@@ -57,7 +57,7 @@
         <div class="signature-card">
           <img class="signature" src="assets/signature.png" alt="Handwritten signature of Xiangcheng Zhan" width="1254" height="1254">
           <div class="signature-meta">
-            <div><b>Currently</b>Post-deployment learning for world-action models</div>
+            <div><b>Currently</b>Agents that learn from experience and improve themselves</div>
             <img src="assets/profile-avatar.png" alt="Z monogram" width="500" height="500">
           </div>
         </div>
@@ -84,27 +84,30 @@
 
     <section class="wrap section" id="interests" aria-labelledby="interests-title">
       <header class="section-head reveal">
-        <div><p class="kicker">01 — Interests</p><h2 id="interests-title">What I think about</h2></div>
-        <p>Three threads, one question: what does a model need to know about the world to act in it well?</p>
+        <div><p class="kicker">01 — Questions</p><h2 id="interests-title">Questions I’m working on</h2></div>
+        <p>These move as the work does. Each links to what I have done on it so far.</p>
       </header>
       <div class="themes">
         <article class="theme reveal">
           <span class="theme-num">i.</span>
           <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="17"/><path d="M15 32h34M32 15c-6 5-6 29 0 34M32 15c6 5 6 29 0 34"/><path class="accent" d="M8 24a26 26 0 0 1 44-11"/><path class="accent" d="m52 7 .3 6.4L46 14"/><path class="accent" d="M56 40a26 26 0 0 1-44 11"/><path class="accent" d="m12 57-.3-6.4L18 50"/></svg>
-          <h3>World-action models</h3>
-          <p>Models that couple visual prediction with action, and keep refining their picture of the world from experience after deployment.</p>
+          <h3>How do agents get better from their own experience?</h3>
+          <p>Successes and failures, after deployment and within a single episode, as signals for refining what a model knows about the world and how it acts.</p>
+          <ul class="theme-work"><li><a href="#dewo-title">DEWO</a></li><li><a href="#robox-title">RoboExperience</a></li></ul>
         </article>
         <article class="theme reveal">
           <span class="theme-num">ii.</span>
-          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6v12"/><rect x="22" y="18" width="20" height="8" rx="2"/><path d="M24 26v10l-4 10M40 26v10l4 10"/><rect class="accent" x="25" y="41" width="14" height="14" rx="2" transform="rotate(-8 32 48)"/><path d="M10 58h44"/></svg>
-          <h3>Dexterous manipulation</h3>
-          <p>Control in high-dimensional action spaces, where small errors compound and policies must adapt beyond their demonstrations.</p>
+          <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 50c8 2 14-2 18-8s10-9 18-8"/><path d="M14 38c6 1 10-2 13-6s8-7 14-6"/><path d="M18 26c4 .5 7-1.5 9-4s6-5 10-4"/><path class="accent" d="M46 34l8 0M54 34l-3-3M54 34l-3 3"/><circle class="fill" cx="46" cy="34" r="2.2"/><path class="accent" d="M8 58h48"/></svg>
+          <h3>Can embodied agents improve themselves?</h3>
+          <p>Agent recursive self-improvement: propose a change, verify it on real tasks, and keep only what measurably helps.</p>
+          <ul class="theme-work"><li><a href="#projects">RoboUse-RSI <span>soon</span></a></li><li><a href="#studio-title">visual RSI studio</a></li></ul>
         </article>
         <article class="theme reveal">
           <span class="theme-num">iii.</span>
           <svg class="theme-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="12" width="30" height="24" rx="3"/><path d="m10 32 8-9 6 6 4-4 6 7"/><circle class="accent" cx="28" cy="19" r="2.5"/><path d="M42 30h16M42 37h12M42 44h16M28 50h22"/><path class="accent" d="M21 40v6a4 4 0 0 0 4 4h1"/></svg>
-          <h3>Grounded multimodal LLMs</h3>
-          <p>Keeping the internal states of vision–language models faithful to what they actually see, so they say less that isn’t there.</p>
+          <h3>What should an agent rely on as models improve?</h3>
+          <p>Which tools and harnesses keep paying off, and how far the model itself can be trusted to see what is actually there.</p>
+          <ul class="theme-work"><li><a href="#halflife-title">Half-Life law</a></li><li><a href="#rot-title">ROT</a></li></ul>
         </article>
       </div>
     </section>

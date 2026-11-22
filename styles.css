@@ -121,6 +121,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--green-2);outline-of
 .theme-icon .fill{fill:currentColor;stroke:none}
 .theme h3{margin:34px 0 8px;font-family:var(--serif);font-weight:500;font-size:1.45rem;line-height:1.2;letter-spacing:-.02em}
 .theme p{margin:0;font-size:.92rem;line-height:1.7;color:var(--body)}
+.theme-work{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 0;padding:16px 0 0;border-top:1px solid var(--line-soft);list-style:none}
+.theme-work a{display:inline-flex;align-items:center;gap:6px;padding:3px 11px;border-radius:999px;background:var(--green-wash);color:var(--green);font-size:.78rem;font-weight:500;transition:background .2s ease}
+.theme-work a:hover{background:#d6dfcb}
+.theme-work span{font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ochre)}
 
 /* Publications */
 .pubs{display:flex;flex-direction:column;gap:18px}
@@ -231,6 +235,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--green-2);outline-of
   .theme-num{grid-column:1/-1}
   .theme-icon{grid-row:2/4;margin:14px 0 0}
   .theme h3{margin:14px 0 6px}
+  .theme-work{grid-column:2}
   .pub{grid-template-columns:220px minmax(0,1fr);gap:26px}
   .projects,.software{grid-template-columns:minmax(0,1fr)}
   .nav .nav-cta{display:none}
@@ -261,6 +266,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--green-2);outline-of
   .stamp{width:70px;height:70px;right:-6px}
   .theme{grid-template-columns:minmax(0,1fr)}
   .theme-icon{grid-row:auto}
+  .theme-work{grid-column:auto}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
