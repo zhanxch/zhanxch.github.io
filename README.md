@@ -10,7 +10,7 @@ Academic homepage: **https://zhanxch.github.io/**.
 - 按本人要求，DEWO 与 ROT 均不附论文、代码或项目链接。
 - 牙菌斑工作来自 [HKU Scholars Hub](https://hub.hku.hk/handle/10722/359253)，按资料库的 Conference_Paper 类型及 Journal of Clinical Periodontology 52(S28) 信息展示。放在 Earlier work，保留完整研究经历。
 - 页面仅包含已确认适合展示的研究内容。
-- 头像使用本人姓名的原创手写签名图。
+- 个人栏展示绿色 Z 字头像和本人姓名的原创手写签名图。
 - 教育经历由本人提供：2019 年开始四年本科、两年硕士、博士在读。按连续就读展示为中山大学数学与应用数学本科（2019–2023）、香港大学人工智能硕士（2023–2025）、哈尔滨工业大学（深圳）计算机博士在读（2025–至今）。
 
 ## 部署到 GitHub Pages
@@ -32,7 +32,7 @@ About 改为草原水彩：金色草地、伞形金合欢与开阔天空，配�
 
 配文选自 Walt Whitman《Song of the Open Road》：“Healthy, free, the world before me,”。保留原诗逗号；参见 [Academy of American Poets 原文](https://poets.org/poem/song-open-road-1)。中文意译：身心轻健，自由自在，世界就在眼前。
 
-视觉采用签名头像、固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
+视觉采用固定个人信息栏与论文排版。参考了 [Jon Barron](https://www.jonbarron.info/) 的论文信息结构、[Brittany Chiang](https://brittanychiang.com/) 的个人信息与正文分栏，以及 [Paco Coursey](https://paco.me/) 的文字节奏。页面代码和签名为此主页原创。
 
 字体使用 DM Sans 与 Newsreader，许可证保存在 `assets/fonts/`。
 
