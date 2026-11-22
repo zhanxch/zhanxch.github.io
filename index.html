@@ -221,7 +221,7 @@
     <section class="wrap section" id="projects" aria-labelledby="projects-title">
       <header class="section-head reveal">
         <div><p class="kicker">03 — Projects</p><h2 id="projects-title">Open questions, open code</h2></div>
-        <p>Research prototypes and tools that are not papers. Each repository describes its own scope and evidence.</p>
+        <p>Research questions and software that are not papers. Each repository states its own scope and evidence.</p>
       </header>
 
       <div class="upcoming reveal">
@@ -231,13 +231,14 @@
         <span class="upcoming-note">In preparation. Details soon.</span>
       </div>
 
+      <p class="subhead reveal">Research</p>
       <div class="projects">
-        <article class="project project-featured reveal" aria-labelledby="linkmind-title">
-          <div class="project-top"><span class="project-kind">Research question · Studio</span><a class="project-repo" href="https://github.com/zhanxch/LinkMind" aria-label="LinkMind on GitHub">GitHub ↗</a></div>
-          <h3 id="linkmind-title"><a href="https://github.com/zhanxch/LinkMind">LinkMind</a></h3>
-          <p class="project-lede">Embodied Infrastructure Half-Life</p>
-          <p>Agent infrastructure encodes assumptions about what a model cannot yet do. As models improve, which tools, skills, and harnesses should an embodied agent keep, revise, or drop? I measure the gain a fixed support configuration adds over the same model’s basic robot interface, and ask when that gain falls to half.</p>
-          <p>LinkMind Studio makes this concrete: procedures link back to the source demonstrations an agent can inspect, adapt to the current scene, and check against live robot feedback.</p>
+        <article class="project project-featured reveal" aria-labelledby="halflife-title">
+          <div class="project-top"><span class="project-kind">Proposed law · Studio</span><a class="project-repo" href="https://github.com/zhanxch/embodied-infra-half-life">GitHub ↗</a></div>
+          <h3 id="halflife-title"><a href="https://github.com/zhanxch/embodied-infra-half-life">Embodied Infrastructure Half-Life</a></h3>
+          <p class="project-lede">A law for what embodied agents should stop relying on</p>
+          <p>Tools, skills, and harnesses encode assumptions about what a model cannot yet do. The half-life law asks how the gain from a fixed support configuration, measured over the same model’s basic robot interface on the same tasks and budgets, decays as models improve, and when it has fallen to half.</p>
+          <p>LinkMind Studio is the measuring instrument: procedures link back to source demonstrations that an agent can inspect, adapt to the current scene, and check against live robot feedback.</p>
           <figure class="halflife" aria-label="Schematic: the gain from fixed support declines across model generations until it reaches half">
             <svg viewBox="0 0 420 150" aria-hidden="true">
               <path d="M40 18v104h360" stroke="#d6cfbd" fill="none"/>
@@ -251,20 +252,52 @@
               <text class="fig-text" x="228" y="66" style="fill:var(--ochre)">½ · half-life</text>
             </svg>
           </figure>
+          <div class="project-links"><a class="link" href="https://github.com/zhanxch/embodied-infra-half-life/blob/main/docs/essay.md">Read the essay →</a></div>
         </article>
 
-        <article class="project reveal" aria-labelledby="roborag-title">
-          <div class="project-top"><span class="project-kind">Research prototype</span><a class="project-repo" href="https://github.com/zhanxch/RoboRAG" aria-label="RoboRAG on GitHub">GitHub ↗</a></div>
-          <h3 id="roborag-title"><a href="https://github.com/zhanxch/RoboRAG">RoboRAG</a></h3>
-          <p>Retrieval-augmented in-context learning for robot control. A read-only long-term library of demonstrations sits beside an episode-local memory that grows as the robot acts. The question: under a fixed context budget, does retrieving from both help adaptation and recovery?</p>
-          <ul class="topics"><li>In-context learning</li><li>Retrieval</li><li>Robot memory</li></ul>
+        <article class="project reveal" aria-labelledby="robox-title">
+          <div class="project-top"><span class="project-kind">Research prototype</span><a class="project-repo" href="https://github.com/zhanxch/RoboExperience">GitHub ↗</a></div>
+          <h3 id="robox-title"><a href="https://github.com/zhanxch/RoboExperience">RoboExperience</a></h3>
+          <p>Using experience to make robot agents better, in context. A read-only library of past demonstrations sits beside an episode-local memory of what just happened; both are retrieved into a frozen policy’s context under a fixed budget. Whether that helps adaptation and recovery is the open question.</p>
+          <figure class="halflife" aria-label="Schematic: a long-term demonstration library and an episode memory both feed a fixed-size context for a frozen policy">
+            <svg viewBox="0 0 420 190" aria-hidden="true">
+              <text class="fig-text" x="24" y="24">long-term · TRAIN demos</text>
+              <g class="fig-paper"><rect x="24" y="34" width="26" height="20" rx="3"/><rect x="56" y="34" width="26" height="20" rx="3"/><rect x="88" y="34" width="26" height="20" rx="3"/><rect x="120" y="34" width="26" height="20" rx="3"/><rect x="152" y="34" width="26" height="20" rx="3"/></g>
+              <rect x="56" y="34" width="26" height="20" rx="3" fill="var(--green)"/><rect x="120" y="34" width="26" height="20" rx="3" fill="var(--green)"/>
+              <text class="fig-text" x="24" y="124">this episode · grows live</text>
+              <g class="fig-paper"><rect x="24" y="134" width="26" height="20" rx="3"/><rect x="56" y="134" width="26" height="20" rx="3"/><rect x="88" y="134" width="26" height="20" rx="3" stroke-dasharray="3 3"/></g>
+              <rect x="24" y="134" width="26" height="20" rx="3" fill="var(--ochre)"/><rect x="56" y="134" width="26" height="20" rx="3" fill="var(--ochre)"/>
+              <path class="fig-line" d="M184 44c40 0 50 40 92 48"/>
+              <path class="fig-ochre" d="M120 144c70 0 110-30 156-40"/>
+              <rect class="fig-paper" x="280" y="70" width="112" height="52" rx="8"/>
+              <text class="fig-text" x="336" y="92" text-anchor="middle">fixed context</text>
+              <text class="fig-text" x="336" y="108" text-anchor="middle">→ frozen policy</text>
+            </svg>
+          </figure>
+          <ul class="topics"><li>Experience retrieval</li><li>In-context learning</li><li>Robot memory</li></ul>
+          <div class="project-links"><a class="link" href="https://github.com/zhanxch/RoboExperience/blob/main/docs/essay.md">Read the essay →</a></div>
         </article>
+      </div>
 
-        <article class="project reveal" aria-labelledby="dsh-title">
-          <div class="project-top"><span class="project-kind">Open-source tool</span><a class="project-repo" href="https://github.com/zhanxch/dsh-robotics" aria-label="dsh-robotics on GitHub">GitHub ↗</a></div>
+      <p class="subhead reveal">Software</p>
+      <div class="software">
+        <article class="tool reveal" aria-labelledby="studio-title">
+          <span class="project-kind">Application · in development</span>
+          <h3 id="studio-title"><a href="https://github.com/zhanxch/visual-RSI-studio">visual RSI studio</a></h3>
+          <p>A complete studio for embodied agents, in the spirit of Antigravity: watch control and cameras live, compare improvement rounds on the Agent RSI Board, register simulators, and keep every run’s data together.</p>
+          <a class="link tool-link" href="https://github.com/zhanxch/visual-RSI-studio/blob/main/docs/essay.md">Why a studio →</a>
+        </article>
+        <article class="tool reveal" aria-labelledby="dsh-title">
+          <span class="project-kind">Plugin</span>
           <h3 id="dsh-title"><a href="https://github.com/zhanxch/dsh-robotics">dsh-robotics</a></h3>
-          <p>A community plugin that brings the workflows of Google DeepMind’s Antigravity Robotics plugin to DeepSeek Harness: a live MuJoCo Studio beside the conversation, with simulation snapshots attached to the next message.</p>
-          <ul class="topics"><li>MuJoCo</li><li>Coding agents</li><li>Apache-2.0</li></ul>
+          <p>Brings Google DeepMind’s Antigravity Robotics workflows to DeepSeek Harness: a live MuJoCo Studio beside the conversation, with simulation snapshots attached to the next message.</p>
+          <a class="link tool-link" href="https://github.com/zhanxch/dsh-robotics">GitHub ↗</a>
+        </article>
+        <article class="tool reveal" aria-labelledby="dshlinux-title">
+          <span class="project-kind">Desktop build</span>
+          <h3 id="dshlinux-title"><a href="https://github.com/zhanxch/dsh-linux">dsh-linux</a></h3>
+          <p>Community Linux desktop builds of DeepSeek Harness, keeping its conversation interface, modes, plugins, and bundled runtime.</p>
+          <a class="link tool-link" href="https://github.com/zhanxch/dsh-linux/releases">Downloads ↗</a>
         </article>
       </div>
     </section>

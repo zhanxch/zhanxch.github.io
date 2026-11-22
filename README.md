@@ -9,7 +9,7 @@ Academic homepage: **https://zhanxch.github.io/**.
 - ROT 的标题、EMNLP 2026 Oral 和三位作者顺序由本人提供。
 - DEWO 附 arXiv 链接（arXiv:2609.37398）。ROT 附 ACL Anthology 官方页面（2026.emnlp-main.1442）、PDF、arXiv（2610.06056）与第一作者的代码仓库 Rooselyn/ROT。作者顺序已与官方页面核对。
 - 牙菌斑工作来自 [HKU Scholars Hub](https://hub.hku.hk/handle/10722/359253)，按资料库的 Conference_Paper 类型及 Journal of Clinical Periodontology 52(S28) 信息展示。放在 Earlier work，保留完整研究经历。
-- Projects 板块：LinkMind（Embodied Infrastructure Half-Life 研究问题与 Studio）、RoboRAG、dsh-robotics，均按项目而非论文展示，不写实验结果；half-life 曲线为概念示意。RoboUse-RSI 目前仅以 Coming soon 一行展示、不带链接，正式发布后再补描述与链接。
+- Projects 板块分 Research 与 Software。Research：Embodied Infrastructure Half-Life（仓库 embodied-infra-half-life，原 LinkMind）与 RoboExperience（原 RoboRAG），各链接仓库内的 docs/essay.md（Gemini 起草、经核对数字出处）。Software：visual RSI studio（原 deepseek-harness-LinkMind）、dsh-robotics、dsh-linux。示意图均为概念草图。RoboUse-RSI 仅以 Coming soon 一行展示、不带链接。
 - 页面仅包含已确认适合展示的研究内容。
 - 个人栏展示绿色 Z 字头像和本人姓名的原创手写签名图。
 - 教育经历由本人提供：2019 年开始四年本科、两年硕士、博士在读。按连续就读展示为中山大学数学与应用数学本科（2019–2023）、香港大学人工智能硕士（2023–2025）、哈尔滨工业大学（深圳）计算机博士在读（2025–至今）。
