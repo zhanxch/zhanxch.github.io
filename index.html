@@ -248,23 +248,29 @@
         <article class="project reveal" aria-labelledby="robox-title">
           <div class="project-top"><span class="project-kind">Research prototype</span><a class="project-repo" href="https://github.com/zhanxch/RoboExperience">GitHub ↗</a></div>
           <h3 id="robox-title"><a href="https://github.com/zhanxch/RoboExperience">RoboExperience</a></h3>
-          <p>Using experience to make robot agents better, in context. A read-only library of past demonstrations sits beside an episode-local memory of what just happened; both are retrieved into a frozen policy’s context under a fixed budget.</p>
-          <figure class="halflife" aria-label="Schematic: a long-term demonstration library and an episode memory both feed a fixed-size context for a frozen policy">
+          <p class="project-lede">Why experience management is not context management</p>
+          <p>Physical experience is expensive to collect and tied to a specific body, scene, and moment, making both forgetting and misplaced recall costly. Experience management governs that lifecycle across a deployment, curating past successes and failures upstream of the short-lived budgeting that context management performs at each step.</p>
+          <figure class="halflife" aria-label="Schematic: experience accumulated across episodes is kept, distilled, or forgotten before anything reaches the context for the current step">
             <svg viewBox="0 0 420 190" aria-hidden="true">
-              <text class="fig-text" x="24" y="24">long-term · TRAIN demos</text>
-              <g class="fig-paper"><rect x="24" y="34" width="26" height="20" rx="3"/><rect x="56" y="34" width="26" height="20" rx="3"/><rect x="88" y="34" width="26" height="20" rx="3"/><rect x="120" y="34" width="26" height="20" rx="3"/><rect x="152" y="34" width="26" height="20" rx="3"/></g>
-              <rect x="56" y="34" width="26" height="20" rx="3" fill="var(--green)"/><rect x="120" y="34" width="26" height="20" rx="3" fill="var(--green)"/>
-              <text class="fig-text" x="24" y="124">this episode · grows live</text>
-              <g class="fig-paper"><rect x="24" y="134" width="26" height="20" rx="3"/><rect x="56" y="134" width="26" height="20" rx="3"/><rect x="88" y="134" width="26" height="20" rx="3" stroke-dasharray="3 3"/></g>
-              <rect x="24" y="134" width="26" height="20" rx="3" fill="var(--ochre)"/><rect x="56" y="134" width="26" height="20" rx="3" fill="var(--ochre)"/>
-              <path class="fig-line" d="M184 44c40 0 50 40 92 48"/>
-              <path class="fig-ochre" d="M120 144c70 0 110-30 156-40"/>
-              <rect class="fig-paper" x="280" y="70" width="112" height="52" rx="8"/>
-              <text class="fig-text" x="336" y="92" text-anchor="middle">fixed context</text>
-              <text class="fig-text" x="336" y="108" text-anchor="middle">→ frozen policy</text>
+              <text class="fig-text" x="24" y="24">experience · across episodes</text>
+              <rect class="fig-paper" x="24" y="36" width="20" height="16" rx="3"/><rect x="48" y="36" width="20" height="16" rx="3" fill="var(--green)"/><rect class="fig-paper" x="72" y="36" width="20" height="16" rx="3"/><rect x="96" y="36" width="20" height="16" rx="3" fill="var(--ochre)"/><rect class="fig-paper" x="120" y="36" width="20" height="16" rx="3"/><rect x="24" y="58" width="20" height="16" rx="3" fill="var(--green)"/><rect class="fig-paper" x="48" y="58" width="20" height="16" rx="3"/><rect class="fig-paper" x="72" y="58" width="20" height="16" rx="3"/><rect class="fig-paper" x="96" y="58" width="20" height="16" rx="3"/><rect x="120" y="58" width="20" height="16" rx="3" fill="var(--green)"/><rect class="fig-paper" x="24" y="80" width="20" height="16" rx="3"/><rect class="fig-paper" x="48" y="80" width="20" height="16" rx="3"/><rect x="72" y="80" width="20" height="16" rx="3" fill="var(--ochre)"/><rect class="fig-paper" x="96" y="80" width="20" height="16" rx="3"/><rect class="fig-paper" x="120" y="80" width="20" height="16" rx="3"/><rect x="24" y="102" width="20" height="16" rx="3" fill="var(--ochre)"/><rect x="48" y="102" width="20" height="16" rx="3" fill="var(--green)"/><rect class="fig-paper" x="72" y="102" width="20" height="16" rx="3"/><rect x="96" y="102" width="20" height="16" rx="3" fill="var(--green)"/><rect class="fig-paper" x="120" y="102" width="20" height="16" rx="3"/>
+              <path class="fig-line" d="M150 80c18 0 22 2 40 2"/>
+              <text class="fig-text" x="242" y="36" text-anchor="middle">manage</text>
+              <rect class="fig-paper" x="196" y="46" width="92" height="74" rx="8"/>
+              <text class="fig-text" x="242" y="70" text-anchor="middle">keep</text>
+              <text class="fig-text" x="242" y="88" text-anchor="middle">distill</text>
+              <text class="fig-text" x="242" y="106" text-anchor="middle" style="opacity:.45;text-decoration:line-through">forget</text>
+              <path class="fig-ochre" d="M290 83h30"/>
+              <rect class="fig-paper" x="324" y="60" width="74" height="46" rx="8"/>
+              <text class="fig-text" x="361" y="80" text-anchor="middle">context</text>
+              <text class="fig-text" x="361" y="95" text-anchor="middle">this step</text>
+              <path class="fig-line" d="M24 150h264" style="opacity:.5"/>
+              <text class="fig-text" x="24" y="168">lifetime of a deployment</text>
+              <path class="fig-ochre" d="M324 150h74" style="opacity:.6"/>
+              <text class="fig-text" x="361" y="168" text-anchor="middle">per-step budget</text>
             </svg>
           </figure>
-          <ul class="topics"><li>Experience retrieval</li><li>In-context learning</li><li>Robot memory</li></ul>
+          <ul class="topics"><li>Experience management</li><li>Embodied agents</li><li>Agent memory</li></ul>
           <div class="project-links"><a class="link" href="https://github.com/zhanxch/RoboExperience/blob/main/docs/essay.md">Read the essay →</a></div>
         </article>
       </div>
